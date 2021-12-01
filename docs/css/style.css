@@ -7122,6 +7122,10 @@ ul {
   color: #f6d330;
 }
 
+.contact__email-link:hover {
+  color: #f6d330;
+}
+
 .send-form input::-moz-placeholder {
   font-family: "SofiaPro";
   font-style: normal;
@@ -7263,7 +7267,7 @@ ul {
   z-index: 1;
 }
 
-#background-lines {
+#backgroundLines {
   position: absolute;
   /* Абсолютное позиционирование */
   top: 0;

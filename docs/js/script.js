@@ -17,9 +17,14 @@ btnSend.addEventListener("click", function () {
   const sendInfo = document.getElementById('sendInfo');
   const thanksBlock = document.getElementById('thanksBlock');
   
+  const lines = document.querySelectorAll('.vertical-lines__item');
+
   if (IsValidInput(inputName) && IsValidInput(inputEmail)) {
     sendInfo.style.display = "none";
     thanksBlock.style.display = "block";
+    for (let i = 0; i < lines.length; i++) {
+      lines[i].style.height = "3400px";
+    }
   }
 });
 

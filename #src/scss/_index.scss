@@ -216,6 +216,9 @@
     }
     &__email-link {
         color: #f6d330;
+        &:hover{
+            color: #f6d330;
+        }
     }
 }
 .send-form {
