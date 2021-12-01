@@ -1,12 +1,24 @@
 
 const iconMenu = document.querySelector('.menu__icon');
 if (iconMenu) {
+  iconMenu.addEventListener("click", closeMobileMenu);
+}
+
+const menuLinks = document.getElementsByClassName('menu__link');
+for (const menuLink of menuLinks) {
+  menuLink.addEventListener("click", closeMobileMenu)
+}
+
+function closeMobileMenu() {
   const bodyMenu = document.querySelector('.menu__body');
-  iconMenu.addEventListener("click", function (params) {
-    document.body.classList.toggle('_lock');
-    iconMenu.classList.toggle('_active');
-    bodyMenu.classList.toggle('_active');
-  });
+  const muneLogo = document.querySelector('.header__logo-img');
+  
+  document.body.classList.toggle('_lock');
+  iconMenu.classList.toggle('_active');
+  bodyMenu.classList.toggle('_active');
+  muneLogo.classList.toggle('_active');
+
+
 }
 
 const btnSend = document.getElementById('sendFrom');
@@ -22,7 +34,7 @@ btnSend.addEventListener("click", function () {
   if (IsValidInput(inputName) && IsValidInput(inputEmail)) {
     sendInfo.style.display = "none";
     thanksBlock.style.display = "block";
-    
+
     for (let i = 0; i < lines.length; i++) {
       lines[i].style.height = "3395px";
     }
@@ -64,9 +76,9 @@ function setName(name, target) {
   target.querySelector('span').innerText = name;
 }
 
-function setColor(color, target){
+function setColor(color, target) {
   links.map(item => {
-    let link =  item;
+    let link = item;
     link.style.color = color;
     return link
   })

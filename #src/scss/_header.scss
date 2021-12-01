@@ -13,7 +13,7 @@
         max-width: 146px;
         width: 100%;
         position: relative;
-        fill: #f6d330;
+        fill: #000;
     }
     &__menu {
         z-index: 4;
@@ -76,7 +76,7 @@ svg{
 
 @include small-tablet {
     .header {
-        padding: 0;
+        padding: 20px 0 0 0;
         &__logo-img {
             max-width: 100px;
         }
@@ -130,21 +130,19 @@ svg{
             top: 50%;
             transform-origin: center center;
             transform: rotate(-45deg) translate(0px, -50%);
-            // background-color: #FFFFFF;
-            background-color: #000;
+            background-color: #FFFFFF;
         }
         &::after {
             transform-origin: center center;
             bottom: 50%;
             transform: rotate(45deg) translate(0px, 50%);
-            background-color: #000;
-            // background-color: #FFFFFF;
+            background-color: #FFFFFF;
         }
     }
     .menu {
         &__body {
-            // position: fixed;
-            position: absolute;
+            position: fixed;
+            // position: absolute;
             top: 0;
             left: -130%;
             width: 100%;
@@ -153,14 +151,16 @@ svg{
             padding: 120px 30px 30px 30px;
             transition: left 0.5s ease-in-out;
             overflow-y: scroll;
-
+            
             &::before {
+                position: absolute;
                 content: " ";
                 width: 100%;
                 top: 0;
                 left: 0;
                 height: 80px;
-                background-color: rgba(0, 0, 0, 0.6);
+                padding: 20px 0;
+                background-color: #000000;
             }
         }
         &__list {
@@ -184,4 +184,8 @@ svg{
 
 .menu__body._active {
     left: 0;
+}
+
+.header__logo-img._active {
+    fill: #FFFFFF;
 }

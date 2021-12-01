@@ -6851,7 +6851,7 @@ ul {
   max-width: 146px;
   width: 100%;
   position: relative;
-  fill: #f6d330;
+  fill: #000;
 }
 
 .header__menu {
@@ -6900,6 +6900,10 @@ svg {
 
 .menu__body._active {
   left: 0;
+}
+
+.header__logo-img._active {
+  fill: #FFFFFF;
 }
 
 /*==========================================*/
@@ -12594,7 +12598,7 @@ svg {
   }
 
   .header {
-    padding: 0;
+    padding: 20px 0 0 0;
   }
 
   .header__logo-img {
@@ -12656,18 +12660,18 @@ svg {
     top: 50%;
     transform-origin: center center;
     transform: rotate(-45deg) translate(0px, -50%);
-    background-color: #000;
+    background-color: #FFFFFF;
   }
 
   .icon-menu._active::after {
     transform-origin: center center;
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
-    background-color: #000;
+    background-color: #FFFFFF;
   }
 
   .menu__body {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: -130%;
     width: 100%;
@@ -12679,12 +12683,14 @@ svg {
   }
 
   .menu__body::before {
+    position: absolute;
     content: " ";
     width: 100%;
     top: 0;
     left: 0;
     height: 80px;
-    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0;
+    background-color: #000000;
   }
 
   .menu__list {
