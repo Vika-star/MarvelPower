@@ -4,7 +4,7 @@ if (iconMenu) {
   iconMenu.addEventListener("click", closeMobileMenu);
 }
 
-const menuLinks = document.getElementsByClassName('link');
+const menuLinks = document.getElementsByClassName('menu__link');
 for (const menuLink of menuLinks) {
   menuLink.addEventListener("click", closeMobileMenu)
 }
@@ -17,8 +17,6 @@ function closeMobileMenu() {
   iconMenu.classList.toggle('_active');
   bodyMenu.classList.toggle('_active');
   muneLogo.classList.toggle('_active');
-
-
 }
 
 const btnSend = document.getElementById('sendFrom');

@@ -6912,8 +6912,11 @@ svg {
   padding: 189px 0px 55px 0;
 }
 
-.banner__title {
+.banner__container {
   z-index: 4;
+}
+
+.banner__title {
   font-family: "Alata";
   font-style: normal;
   font-weight: 400;
@@ -7249,6 +7252,10 @@ svg {
   right: 0px;
 }
 
+.nav-item.active .scroll-navigation__li {
+  width: 150px;
+}
+
 .nav-item.active .scroll-navigation__li::after {
   position: absolute;
   border-bottom: 1px solid;
@@ -7277,22 +7284,22 @@ svg {
   display: inline-block;
 }
 
-#bannerContent {
+#bannerSection {
   position: relative;
   z-index: 5;
 }
 
-#aboutContent {
+#aboutSection {
   position: relative;
   z-index: 4;
 }
 
-#servicesContent {
+#servicesSection {
   position: relative;
   z-index: 1;
 }
 
-#contactContent {
+#contactSection {
   position: relative;
   z-index: 1;
 }
@@ -12509,12 +12516,12 @@ svg {
     width: 100%;
   }
 
-  #bannerContent {
+  #bannerSection {
     position: relative;
     z-index: 1;
   }
 
-  #aboutContent {
+  #aboutSection {
     position: relative;
     z-index: 1;
   }

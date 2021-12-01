@@ -1,9 +1,9 @@
 .banner {
     padding: 189px 0px 55px 0;
     &__container {
+        z-index: 4;
     }
     &__title {
-        z-index: 4;
         font-family: "Alata";
         font-style: normal;
         font-weight: 400;
