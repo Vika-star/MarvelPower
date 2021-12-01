@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Gulp</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy">
+
+
+    <div class="wrapper">
+        <div class="page">
+            <div class="scroll-navigation" id="myScrollspy">
+
+            </div>
+            <div id="list-example" class="list-group">
+                <a class="list-group-item list-group-item-action" href="#bannerContent">Item 1</a>
+                <a class="list-group-item list-group-item-action" href="#aboutContent">Item2</a>
+                <a class="list-group-item list-group-item-action" href="#servicesContent">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#contactContent">Item 4</a>
+            </div>
+            <!-- <div class="scroll-navigation">
+                <div class="scroll-navigation__list">
+                    <div class="scroll-navigation__li">
+                        <a href="" class="scroll-navigation__link">
+                            01 <span class="scroll-navigation__hiddenText" id="homeBlock">Home</span>
+                        </a>
+                    </div>
+                    <div class="scroll-navigation__li">
+                        <a href="" class="scroll-navigation__link">
+                            02 <span class="scroll-navigation__hiddenText" id="aboutBlock">About</span>
+                        </a>
+                    </div>
+                    <div class="scroll-navigation__li">
+                        <a href="" class="scroll-navigation__link">
+                            03 <span class="scroll-navigation__hiddenText" id="servicesBlock">Services</span>
+                        </a>
+                    </div>
+                    <div class="scroll-navigation__li">
+                        <a href="" class="scroll-navigation__link">
+                            04 <span class="scroll-navigation__hiddenText" id="contactBlock">Contact</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+            <div class="vertical-lines">
+                <div class="vertical-lines__container _container">
+                    <div class="vertical-lines__list" id="background-lines">
+                        <div class="vertical-lines__item"></div>
+                        <div class="vertical-lines__item"></div>
+                        <div class="vertical-lines__item"></div>
+                        <div class="vertical-lines__item"></div>
+                        <div class="vertical-lines__item"></div>
+                    </div>
+                </div>
+            </div>
+            @@include('_header.html')
+            <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0">
+                <div class="banner" id="bannerContent">
+                    <div class="banner__container _container">
+                        <div class="banner__content">
+                            <div class="banner__title">
+                                Marvel Power Group
+                            </div>
+                            <div class="banner__text text">
+                                Marvel Power Group is a boutique consulting firm with a fresh, markets-based
+                                approach to
+                                value
+                                creation. We offer services to clients in energy, water, manufacturing and
+                                transportation
+                                sectors.
+                            </div>
+                        </div>
+                        <div class="banner__button">
+                            <a href="#contactContent" class="btn">Contact us</a>
+                            <!-- <input type="button" value="CONTACT US" class="btn"> -->
+                        </div>
+                        <div class="banner__scrolls">
+                            <div class="banner__scroll-text">
+                                Scroll for more
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us" id="aboutContent">
+                    <div class="about-us__container _container">
+                        <div class="about-us__title title">
+                            About Us
+                        </div>
+                        <div class="about-us__content">
+                            <div class="about-us__image">
+                                <img src="./img/about-us/about.jpg" alt="about us">
+                            </div>
+                            <div class="about-us__text text">
+                                <div class="about-us__text-item">
+                                    Our dynamic, solutions-oriented team brings decades
+                                    of relevant transactional, analytical and regulatory experience to supporting
+                                    our
+                                    clients’ unique agendas.
+                                </div>
+                                <div class="about-us__text-item">
+                                    We are experienced practitioners who have run companies, successfully originated
+                                    and
+                                    closed complex deals, advocated and negotiated favorable policy and advanced
+                                    technological innovation and climate leadership.
+                                </div>
+                                <div class="about-us__text-item">
+                                    We specialize in structuring balanced solutions for all affected stakeholders
+                                    and
+                                    uncovering
+                                    economic opportunities in otherwise opaque environments.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="services" id="servicesContent">
+                    <div class="services__container _container">
+                        <div class="services__title title">
+                            Services
+                        </div>
+                        <div class="services__text text">
+                            Our clients are at the forefront of energy transition and innovation. Their task is
+                            complex:
+                            balance reliability and cost effectiveness with new customer demands, investment
+                            decisions,
+                            decarbonization goals and an evolving menu of new technologies. We understand the task
+                            and
+                            bring
+                            deep expertise
+                            to addressing these challenges.
+                        </div>
+                        <div class="services__content">
+                            <div class="services__colums colums-servies">
+                                <div class="colums-servies__item">
+                                    <div class="colums-servies__title">
+                                        Enterprise<br> Strategy
+                                    </div>
+                                    <div class="colums-servies__text">
+                                        <ul class="colums-servies__list">
+                                            <li class="colums-servies__li">
+                                                Procurement and investment diligence
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Customer engagement and retention
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Renewable, DER, and EV program structuring
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Reliability planning and reporting
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="#bannerContent" class="colums-servies__arrow"></a>
+                                </div>
+                                <div class="colums-servies__item">
+                                    <div class="colums-servies__title">
+                                        Wholesale<br> Power
+                                    </div>
+                                    <div class="colums-servies__text">
+                                        <ul class="colums-servies__list">
+                                            <li class="colums-servies__li">
+                                                Commodity advisory and RFPs
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Energy, capacity, REC, RIN, and LCFS placement
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Enterprise PPA structuring
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Contract extensions and re-packaging
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="" class="colums-servies__arrow"></a>
+                                </div>
+                                <div class="colums-servies__item">
+                                    <div class="colums-servies__title">
+                                        Market<br> Development
+                                    </div>
+
+
+                                    <div class="colums-servies__text">
+                                        <ul class="colums-servies__list">
+                                            <li class="colums-servies__li">
+                                                New venture setup </li>
+                                            <li class="colums-servies__li">
+                                                Customer engagement and retention
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Project development and regulatory support
+                                            </li>
+                                            <li class="colums-servies__li">
+                                                Partnership structuring
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <a href="" class="colums-servies__arrow"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="services__text text">
+                            Our clients are time constrained and under-resourced. Agendas shift, budgets move and
+                            priorities
+                            change. We understand. We are agile, creative and immediately responsive to your various
+                            working
+                            styles, governance requirements and evolving needs.
+                        </div>
+                    </div>
+                </div>
+                <div class="contact" id="contactContent">
+                    <div class="contact__container _container">
+                        <div class="contact__content-column">
+                            <div class="contact__title title">
+                                Contact
+                            </div>
+                            <div class="contact__email">
+                                Email us here:
+                                <a href="mailto:info@marvelpowergroup.com"
+                                    class="contact__link">info@marvelpowergroup.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__content-column" id="sendInfo">
+                            <div class="contact__descpription">
+                                Stay in the loop<br>
+                                by getting on<br>
+                                our mailing list<br>
+                            </div>
+                            <div class="contact__form-send send-form">
+                                <form>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="inputName" placeholder="Name *"
+                                            required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="inputEmail"
+                                            aria-describedby="emailHelp" placeholder="E-mail *" required>
+                                    </div>
+                                    <div class="send-form__button">
+                                        <button type="button" class="send-form__btn btn" id="sendFrom">Send</button>
+                                    </div>
+                                </form>
+                                <!-- <form name="send">
+                                <div class="send-form__name">
+                                    <input type="text" name="name" id="" placeholder="Name *">
+                                </div>
+                                <div class="send-form__e-mail">
+                                    <input type="text" name="email" id="" placeholder="E-mail *">
+                                </div>
+                                <div class="send-form__send">
+                                    <button type="submit" class="send-form__btn btn">Send</button>
+                                </div>
+                            </form> -->
+                            </div>
+                        </div>
+                        <div class="contact__content-column" id="thanksBlock">
+                            <div class="contact__descpription">
+                                Thank you.<br>
+                                Your info has been <br>
+                                successfully sent<br>
+                            </div>
+                            <div class="contact__thanks">
+                                Your can contact us <a href="mailto:info@marvelpowergroup.com"
+                                    class="contact__email-link">info@marvelpowergroup.com</a>
+                                if you need additional assistance
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @@include('_footer.html')
+    @@include('js.html')
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+@import "./mixins.scss";
+@import "./_fonts.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+/*==========================================*/
+
+$minwidth: 320px;
+$mw: 1110px;
+$md1: $mw + 12;
+$md2: 991.98px;
+$md3: 767.98;
+$md4: 479.98;
+
+/*==========================================*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    // position: relative;
+
+    color: #000;
+    font-size: 14px;
+    font-family: "SofiaPro";
+}
+body._lock {
+    overflow: hidden;
+    @media (max-width: $md3) {
+    }
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style-type: none;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+/*==========================================*/
+
+._container {
+    max-width: $mw;
+    margin: 0 auto;
+    @include small-desktop-min {
+        padding: 0 30px;
+    }
+    @include small-tablet {
+        max-width: none;
+        padding: 0 25px;
+    }
+    @include mobile-s {
+        padding: 0px 15px;
+    }
+}
+// ===========================================================
+.text {
+    font-family: "SofiaPro";
+    font-style: normal;
+    font-weight: 300;
+}
+.btn {
+    background: #f9d023;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 19px 40px 15px 40px;
+
+    font-family: "SofiaPro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: #000;
+    border: 0px;
+
+    &::after {
+        content: url("../img/icon/btn-icon.svg");
+        margin-left: 5px;
+    }
+    // transition: background 0.3s ease 0s;
+    // @media (min-width: 992px) {
+    //     &:hover {
+    //         background-color: #d00045;
+    //     }
+    // }
+}
+.product-img {
+    margin: auto 0;
+    // overflow: hidden;
+    img {
+        max-width: 100%;
+    }
+}
+.product-title {
+    font-family: "Hind Madurai";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(36 / 26 * 100%);
+}
+.title {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 55px 0;
+    &::after {
+        margin-top: -50px;
+        content: "_";
+        color: #f6d330;
+    }
+}
+.page {
+    flex: 1 1 auto;
+     background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    width: 100%;
+
+}
+
+@include tablet {
+    .title {
+        font-size: 70px;
+    }
+}
+@include mobile-min {
+    .title {
+        font-size: 40px;
+    }
+}
+/*==========================================*/
+@import "_header.scss";
+/*==========================================*/
+@import "_index.scss";
+@import "_additionally.scss";
+/*==========================================*/
+@import "_footer.scss";

@@ -1,0 +1,350 @@
+.banner {
+    padding: 189px 0px 55px 0;
+    &__container {
+    }
+    &__title {
+        z-index: 4;
+        font-family: "Alata";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 115px;
+        line-height: 130px;
+        text-align: center;
+        color: #ffffff;
+
+        margin: 0 0 41px 0;
+    }
+
+    &__text {
+        z-index: 4;
+        color: #ffffff;
+        font-size: 25px;
+        line-height: 35px;
+
+        text-align: center;
+    }
+    &__content {
+        margin: 0 0 79px 0;
+    }
+    &__button {
+        z-index: 4;
+        display: flex;
+        justify-content: center;
+        margin: 0 0 300px 0;
+    }
+    &__scrolls {
+    }
+    &__scroll-text {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+
+        color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.about-us {
+    z-index: 3;
+    padding: 93px 0px;
+    &__container {
+    }
+    &__title {
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__image {
+        padding: 0 10px 10px 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__text {
+        max-width: 490px;
+        font-size: 18px;
+        line-height: 26px;
+        color: #0b0d21;
+    }
+    &__text-item {
+        margin: 0 0 15px 0;
+    }
+}
+
+.services {
+    background-color: #f6d330;
+    padding: 101px 0px 92px 0px;
+    &__container {
+        z-index: 4;
+    }
+    &__title {
+        &::after {
+            color: #ffffff;
+        }
+    }
+    &__text {
+        max-width: 837px;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 47px 0;
+    }
+    &__content {
+        margin: 0 0 67px 0;
+    }
+    &__colums {
+    }
+}
+.colums-servies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__item {
+        max-width: 329px;
+    }
+    &__title {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 0 0 33px 0;
+    }
+    &__text {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 20px;
+
+        color: #0b0d21;
+    }
+    &__list {
+        // list-style: square;
+        padding: 0;
+        margin: 0 0 41px 0;
+    }
+    &__li {
+        margin: 0 0 10px 0;
+        &::before {
+            content: "\220E";
+            color: #ffffff;
+        }
+    }
+    &__arrow {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0px;
+        &::before {
+            content: url("../img/icon/arrow-btn.svg");
+        }
+    }
+}
+
+.contact {
+    background-color: #000000;
+    padding: 101px 0px 288px 0px;
+    color: #fff;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 4;
+    }
+    &__content-column {
+        // &:first-child{
+        //     margin-right: 10px;
+        // }
+    }
+    &__title {
+    }
+
+    &__email {
+        // max-width: 442px;
+        width: 100%;
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        color: #f6d330;
+        text-decoration: underline;
+    }
+    &__descpription {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 42px;
+        margin: 0 0 41px 0;
+    }
+
+    &__form-send {
+    }
+    &__thanks {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    &__email-link {
+        color: #f6d330;
+    }
+}
+.send-form {
+    input::placeholder {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.6px;
+        color: #000000;
+        text-transform: uppercase;
+    }
+    input {
+        padding: 18px 20px;
+        width: 100%;
+        border-radius: 0 !important;
+        margin: 0 0 15px 0;
+    }
+    &__btn {
+        padding: 19px 105px;
+        border-radius: 0;
+    }
+    &__button{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+#thanksBlock {
+    max-width: 442px;
+    width: 100%;
+    display: none;
+}
+#sendInfo {
+    max-width: 445px;
+    width: 100%;
+    display: block;
+}
+@include tablet {
+    .contact {
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+        &__email {
+            margin: 0 0 46px 0;
+        }
+    }
+    .banner {
+        padding: 189px 0px 150px 0;
+    }
+    .about-us {
+        &__content {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            // flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__image {
+            padding: 0;
+            margin: 0 0 30px 0;
+        }
+    }
+}
+@include small-tablet {
+    .contact {
+        &__email {
+            max-width: none;
+            font-size: 25px;
+            line-height: 30px;
+        }
+        &__link {
+            color: #f6d330;
+            text-decoration: underline;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+        &__descpription {
+            font-size: 25px;
+            line-height: 35px;
+
+            margin: 0 0 23px 0;
+        }
+
+        &__form-send {
+        }
+    }
+}
+@include mobile {
+    .colums-servies {
+        &__title {
+            font-size: 25px;
+            line-height: 42px;
+            margin: 0 0 22px 0;
+        }
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+
+            color: #0b0d21;
+        }
+        &__item {
+            margin-bottom: 58px;
+        }
+    }
+    .contact {
+        padding: 55px 0 70px 0;
+    }
+    .about-us {
+        padding: 53px 0;
+    }
+    .banner {
+        padding: 250px 0px;
+        &__title {
+            font-size: 50px;
+            line-height: 60px;
+        }
+        // &__button {
+        //     margin: 0;
+        // }
+        &__scrolls {
+            display: none;
+        }
+    }
+    .services {
+        padding: 54px 0 62px 0;
+        &__title {
+            margin: 0 0 25px 0;
+        }
+        &__text {
+            max-width: 837px;
+            font-size: 14px;
+            line-height: 16px;
+            margin: 0 0 47px 0;
+        }
+        &__content {
+            margin: 0;
+        }
+    }
+}
+@include mobile-min {
+    .banner {
+        padding: 150px 0px;
+    }
+}

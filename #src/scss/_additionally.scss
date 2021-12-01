@@ -1,0 +1,127 @@
+.list-group{
+    overflow: hidden;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        z-index: 10;
+}
+
+.scroll-navigation {
+    max-width: 100px;
+    width: 100%;
+    &__list {
+        overflow: hidden;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        z-index: 10;
+        // width: 100%;
+    }
+    &__li {
+        max-width: 100px;
+        // width: 42px;
+        width: 100px;
+        display: flex;
+        font-family: 'SofiaPro';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        position: relative;
+        &::after{
+            position: absolute;
+            border-bottom: 1px solid #000;
+            width: 21px;
+            content: "";
+            top:50%;
+            text-align: right;
+            right: 0px;
+        }
+        
+    }
+    &__hiddenText {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        // display: none;
+    }
+    &__link {
+    }
+}
+.line {
+    width: 53px;
+    height: 0;
+    border: 1px solid #C4C4C4;
+    margin: 3px;
+    display:inline-block;
+  }
+#bannerContent {
+    position: relative;
+    z-index: 4;
+}
+#aboutContent {
+    position: relative;
+    z-index: 4;
+}
+#servicesContent {
+    position: relative;
+    z-index: 1;
+}
+#contactContent {
+    position: relative;
+    z-index: 1;
+}
+// #rightcol {
+//     position: absolute; /* Абсолютное позиционирование */
+//     left: 350px; /* Положение левого края */
+//     top: 50px; /* Положение верхнего края */
+//     width: 800px;
+//     height: 400px;
+//     background: #e0e0e0; /* Цвет фона */
+//     border: solid 1px #000; /* Параметры рамки */
+//     z-index: 2;
+// }
+#background-lines {
+    position: absolute; /* Абсолютное позиционирование */
+    // left: 0; /* Положение левого края */
+    top: 0; /* Положение верхнего края */
+    height: 100%; /* Ширина слоя */
+    width: 100%;
+    max-width: 1110px; /* Ширина слоя */
+    min-height: 500px;
+    // background: #800000; /* Цвет фона */
+    color: white; /* Цвет текста */
+    z-index: 2;
+}
+
+// #middle{
+//     z-index: 1;
+//     position: absolute; /* Абсолютное позиционирование */
+//     // left: 100px;
+//     // margin: 0 400px;/* Положение левого края */
+//     top: 0; /* Положение верхнего края */
+//     height: 100%; /* Ширина слоя */
+//     width: 100%;
+
+//      /* Ширина слоя */
+//     background: rgba(148, 72, 72, 0.9); /* Цвет фона */
+//     color: white; /* Цвет текста */
+// }
+
+.vertical-lines {
+    &__container {
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    // .vertical-lines__item
+
+    &__item {
+        // border-left: 1px solid rgba(0, 0, 0, 0.1);
+        border-left: 1px solid rgba(0, 0, 0, 0.06);
+        height: 3500px;
+    }
+}
