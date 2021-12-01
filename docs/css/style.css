@@ -7203,7 +7203,6 @@ ul {
 }
 
 .scroll-navigation {
-  max-width: 100px;
   width: 100%;
 }
 
@@ -7216,8 +7215,7 @@ ul {
 }
 
 .scroll-navigation__li {
-  max-width: 100px;
-  width: 100px;
+  width: 200px;
   display: flex;
   font-family: "SofiaPro";
   font-style: normal;
@@ -7225,11 +7223,12 @@ ul {
   font-size: 10px;
   line-height: 10px;
   position: relative;
+  color: #fff;
 }
 
 .scroll-navigation__li::after {
   position: absolute;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid;
   width: 21px;
   content: "";
   top: 50%;
@@ -7243,6 +7242,20 @@ ul {
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
+}
+
+.nav-item.active .scroll-navigation__li::after {
+  position: absolute;
+  border-bottom: 1px solid;
+  width: 50px;
+  content: "";
+  top: 50%;
+  text-align: right;
+  right: 0px;
+}
+
+.navigationName {
+  margin: 0 0 0 10px;
 }
 
 .line {

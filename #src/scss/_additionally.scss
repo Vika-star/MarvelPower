@@ -1,5 +1,5 @@
 .scroll-navigation {
-    max-width: 100px;
+    // max-width: 100px;
     width: 100%;
     &__list {
         overflow: hidden;
@@ -10,9 +10,7 @@
         // width: 100%;
     }
     &__li {
-        max-width: 100px;
-        // width: 42px;
-        width: 100px;
+        width: 200px;
         display: flex;
         font-family: "SofiaPro";
         font-style: normal;
@@ -20,9 +18,10 @@
         font-size: 10px;
         line-height: 10px;
         position: relative;
+        color: #fff;
         &::after {
             position: absolute;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid;
             width: 21px;
             content: "";
             top: 50%;
@@ -41,6 +40,24 @@
     &__link {
     }
 }
+.nav-item.active .scroll-navigation__li{
+    // max-width: 200px;
+    &::after {
+        position: absolute;
+        border-bottom: 1px solid ;
+        width: 50px;
+        content: "";
+        top: 50%;
+        text-align: right;
+        right: 0px;
+    }
+}
+.navigationName{
+    margin: 0 0     0 10px;
+}
+// .nav-item.active .nav-link{
+//     color: #c4c4c4;
+// }
 .line {
     width: 53px;
     height: 0;

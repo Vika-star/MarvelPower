@@ -7,27 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <title>Gulp</title>
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#scrollspy-nav">
-
-<!-- <body> -->
-
-
+<body data-spy="scroll" data-offset="-50" data-target="#scrollspy-nav">
+    <div id="bannerContent"></div>
     <div class="wrapper">
         <div class="page">
-            <div class="scroll-navigation">
-                <nav id="scrollspy-nav" class="scroll-navigation__list navbar">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item"><a class="nav-link" href="#bannerContent">Banner</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#aboutContent">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#servicesContent">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contactContent">Contact</a></li>
+            <div class="scroll-navigation__list">
+                <nav id="scrollspy-nav" class="navbar navbar-default">
+                    <ul class="nav flex-column">
+                        <li class="nav-item" id="bannerNavigation"><a class="scroll-navigation__li nav-link"
+                                href="#bannerContent">01 <span class="navigationName"></span></a>
+                        </li>
+                        <li class="nav-item" id="aboutUsNavigation"><a class="scroll-navigation__li nav-link"
+                                href="#aboutContent">02 <span class="navigationName"></span></a>
+                        </li>
+                        <li class="nav-item" id="servicesNavigation"><a class="scroll-navigation__li nav-link"
+                                href="#servicesContent">03 <span class="navigationName"></span></a>
+                        </li>
+                        <li class="nav-item" id="contactNavigation"><a class="scroll-navigation__li nav-link"
+                                href="#contactContent">04 <span class="navigationName"></span></a>
+                        </li>
                     </ul>
                 </nav>
             </div>
+
             <!-- <div class="scroll-navigation">
                 <div class="scroll-navigation__list">
                     <div class="scroll-navigation__li">
@@ -98,8 +106,9 @@
     </div>
 </header>
                 <!-- <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"> -->
-                <section class="banner" id="bannerContent">
+                <section class="banner" >
                     <div class="banner__container _container">
+                       
                         <div class="banner__content">
                             <div class="banner__title">
                                 Marvel Power Group
@@ -112,11 +121,13 @@
                                 transportation
                                 sectors.
                             </div>
+                            <div id="aboutContent"></div>
                         </div>
                         <div class="banner__button">
                             <a href="#contactContent" class="btn">Contact us</a>
                             <!-- <input type="button" value="CONTACT US" class="btn"> -->
                         </div>
+                        
                         <div class="banner__scrolls">
                             <div class="banner__decoration-lines lines-decoration">
                                 <div class="lines-decoration__line"></div>
@@ -132,10 +143,11 @@
                     </div>
                 </section>
             </div>
-            <section class="about-us" id="aboutContent">
+            <section class="about-us" >
                 <div class="about-us__container _container">
                     <div class="about-us__title title">
                         About Us
+                        <div id="servicesContent"></div>
                     </div>
                     <div class="about-us__content">
                         <div class="about-us__image">
@@ -164,7 +176,7 @@
                     </div>
                 </div>
             </section>
-            <section class="services" id="servicesContent">
+            <section class="services">
                 <div class="services__container _container">
                     <div class="services__title title">
                         Services
@@ -240,6 +252,7 @@
                                         <li class="colums-servies__li">
                                             Customer engagement and retention
                                         </li>
+                                        <div id="contactContent"></div>
                                         <li class="colums-servies__li">
                                             Project development and regulatory support
                                         </li>
@@ -261,7 +274,7 @@
                     </div>
                 </div>
             </section>
-            <section class="contact" id="contactContent">
+            <section class="contact">
                 <div class="contact__container _container">
 
                     <div class="contact__colums">
