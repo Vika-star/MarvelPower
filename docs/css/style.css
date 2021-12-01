@@ -6821,7 +6821,11 @@ ul {
 
 .page {
   flex: 1 1 auto;
+}
+
+.bacground {
   background-image: url(../img/background.png);
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
 }
@@ -6922,7 +6926,11 @@ ul {
   z-index: 4;
   display: flex;
   justify-content: center;
-  margin: 0 0 300px 0;
+  margin: 0 0 106px 0;
+}
+
+.banner__decoration-lines {
+  margin: 0 0 25px 0;
 }
 
 .banner__scroll-text {
@@ -6933,6 +6941,22 @@ ul {
   line-height: 14px;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
+}
+
+.lines-decoration {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.lines-decoration__line {
+  border-left: 1px solid #fff;
+  height: 15px;
+}
+
+.lines-decoration__line-active {
+  border-left: 1px solid #f6d330;
+  height: 101px;
 }
 
 .about-us {
@@ -7046,15 +7070,19 @@ ul {
 
 .contact {
   background-color: #000000;
-  padding: 101px 0px 288px 0px;
+  padding: 101px 0px 94px 0px;
   color: #fff;
 }
 
 .contact__container {
+  z-index: 4;
+}
+
+.contact__colums {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 4;
+  margin: 0 0 93px 0;
 }
 
 .contact__email {

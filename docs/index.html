@@ -7,11 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Gulp</title>
 </head>
 
 <!-- <body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy"> -->
+
 <body>
 
 
@@ -59,7 +60,8 @@
                     </div>
                 </div>
             </div>
-            <header class="header">
+            <div class="bacground">
+                <header class="header">
     <div class="header__container _container">
         <div class="header__logo">
             <a href="./index.html">
@@ -85,7 +87,7 @@
         </div>
     </div>
 </header>
-            <!-- <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"> -->
+                <!-- <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"> -->
                 <section class="banner" id="bannerContent">
                     <div class="banner__container _container">
                         <div class="banner__content">
@@ -106,143 +108,153 @@
                             <!-- <input type="button" value="CONTACT US" class="btn"> -->
                         </div>
                         <div class="banner__scrolls">
+                            <div class="banner__decoration-lines lines-decoration">
+                                <div class="lines-decoration__line"></div>
+                                <div class="lines-decoration__line"></div>
+                                <div class="lines-decoration__line-active"></div>
+                                <div class="lines-decoration__line"></div>
+                                <div class="lines-decoration__line"></div>
+                            </div>
                             <div class="banner__scroll-text">
                                 Scroll for more
                             </div>
                         </div>
                     </div>
                 </section>
-                <section class="about-us" id="aboutContent">
-                    <div class="about-us__container _container">
-                        <div class="about-us__title title">
-                            About Us
+            </div>
+            <section class="about-us" id="aboutContent">
+                <div class="about-us__container _container">
+                    <div class="about-us__title title">
+                        About Us
+                    </div>
+                    <div class="about-us__content">
+                        <div class="about-us__image">
+                            <img src="./img/about-us/about.jpg" alt="about us">
                         </div>
-                        <div class="about-us__content">
-                            <div class="about-us__image">
-                                <img src="./img/about-us/about.jpg" alt="about us">
+                        <div class="about-us__text text">
+                            <div class="about-us__text-item">
+                                Our dynamic, solutions-oriented team brings decades
+                                of relevant transactional, analytical and regulatory experience to supporting
+                                our
+                                clients’ unique agendas.
                             </div>
-                            <div class="about-us__text text">
-                                <div class="about-us__text-item">
-                                    Our dynamic, solutions-oriented team brings decades
-                                    of relevant transactional, analytical and regulatory experience to supporting
-                                    our
-                                    clients’ unique agendas.
-                                </div>
-                                <div class="about-us__text-item">
-                                    We are experienced practitioners who have run companies, successfully originated
-                                    and
-                                    closed complex deals, advocated and negotiated favorable policy and advanced
-                                    technological innovation and climate leadership.
-                                </div>
-                                <div class="about-us__text-item">
-                                    We specialize in structuring balanced solutions for all affected stakeholders
-                                    and
-                                    uncovering
-                                    economic opportunities in otherwise opaque environments.
-                                </div>
+                            <div class="about-us__text-item">
+                                We are experienced practitioners who have run companies, successfully originated
+                                and
+                                closed complex deals, advocated and negotiated favorable policy and advanced
+                                technological innovation and climate leadership.
+                            </div>
+                            <div class="about-us__text-item">
+                                We specialize in structuring balanced solutions for all affected stakeholders
+                                and
+                                uncovering
+                                economic opportunities in otherwise opaque environments.
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="services" id="servicesContent">
-                    <div class="services__container _container">
-                        <div class="services__title title">
-                            Services
-                        </div>
-                        <div class="services__text text">
-                            Our clients are at the forefront of energy transition and innovation. Their task is
-                            complex:
-                            balance reliability and cost effectiveness with new customer demands, investment
-                            decisions,
-                            decarbonization goals and an evolving menu of new technologies. We understand the task
-                            and
-                            bring
-                            deep expertise
-                            to addressing these challenges.
-                        </div>
-                        <div class="services__content">
-                            <div class="services__colums colums-servies">
-                                <div class="colums-servies__item">
-                                    <div class="colums-servies__title">
-                                        Enterprise<br> Strategy
-                                    </div>
-                                    <div class="colums-servies__text">
-                                        <ul class="colums-servies__list">
-                                            <li class="colums-servies__li">
-                                                Procurement and investment diligence
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Customer engagement and retention
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Renewable, DER, and EV program structuring
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Reliability planning and reporting
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="#bannerContent" class="colums-servies__arrow"></a>
+                </div>
+            </section>
+            <section class="services" id="servicesContent">
+                <div class="services__container _container">
+                    <div class="services__title title">
+                        Services
+                    </div>
+                    <div class="services__text text">
+                        Our clients are at the forefront of energy transition and innovation. Their task is
+                        complex:
+                        balance reliability and cost effectiveness with new customer demands, investment
+                        decisions,
+                        decarbonization goals and an evolving menu of new technologies. We understand the task
+                        and
+                        bring
+                        deep expertise
+                        to addressing these challenges.
+                    </div>
+                    <div class="services__content">
+                        <div class="services__colums colums-servies">
+                            <div class="colums-servies__item">
+                                <div class="colums-servies__title">
+                                    Enterprise<br> Strategy
                                 </div>
-                                <div class="colums-servies__item">
-                                    <div class="colums-servies__title">
-                                        Wholesale<br> Power
-                                    </div>
-                                    <div class="colums-servies__text">
-                                        <ul class="colums-servies__list">
-                                            <li class="colums-servies__li">
-                                                Commodity advisory and RFPs
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Energy, capacity, REC, RIN, and LCFS placement
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Enterprise PPA structuring
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Contract extensions and re-packaging
-
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="" class="colums-servies__arrow"></a>
+                                <div class="colums-servies__text">
+                                    <ul class="colums-servies__list">
+                                        <li class="colums-servies__li">
+                                            Procurement and investment diligence
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Customer engagement and retention
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Renewable, DER, and EV program structuring
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Reliability planning and reporting
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="colums-servies__item">
-                                    <div class="colums-servies__title">
-                                        Market<br> Development
-                                    </div>
-
-
-                                    <div class="colums-servies__text">
-                                        <ul class="colums-servies__list">
-                                            <li class="colums-servies__li">
-                                                New venture setup </li>
-                                            <li class="colums-servies__li">
-                                                Customer engagement and retention
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Project development and regulatory support
-                                            </li>
-                                            <li class="colums-servies__li">
-                                                Partnership structuring
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <a href="" class="colums-servies__arrow"></a>
+                                <a href="#bannerContent" class="colums-servies__arrow"></a>
+                            </div>
+                            <div class="colums-servies__item">
+                                <div class="colums-servies__title">
+                                    Wholesale<br> Power
                                 </div>
+                                <div class="colums-servies__text">
+                                    <ul class="colums-servies__list">
+                                        <li class="colums-servies__li">
+                                            Commodity advisory and RFPs
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Energy, capacity, REC, RIN, and LCFS placement
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Enterprise PPA structuring
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Contract extensions and re-packaging
+
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="colums-servies__arrow"></a>
+                            </div>
+                            <div class="colums-servies__item">
+                                <div class="colums-servies__title">
+                                    Market<br> Development
+                                </div>
+
+
+                                <div class="colums-servies__text">
+                                    <ul class="colums-servies__list">
+                                        <li class="colums-servies__li">
+                                            New venture setup </li>
+                                        <li class="colums-servies__li">
+                                            Customer engagement and retention
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Project development and regulatory support
+                                        </li>
+                                        <li class="colums-servies__li">
+                                            Partnership structuring
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="" class="colums-servies__arrow"></a>
                             </div>
                         </div>
-                        <div class="services__text text">
-                            Our clients are time constrained and under-resourced. Agendas shift, budgets move and
-                            priorities
-                            change. We understand. We are agile, creative and immediately responsive to your various
-                            working
-                            styles, governance requirements and evolving needs.
-                        </div>
                     </div>
-                </section>
-                <section class="contact" id="contactContent">
-                    <div class="contact__container _container">
+                    <div class="services__text text">
+                        Our clients are time constrained and under-resourced. Agendas shift, budgets move and
+                        priorities
+                        change. We understand. We are agile, creative and immediately responsive to your various
+                        working
+                        styles, governance requirements and evolving needs.
+                    </div>
+                </div>
+            </section>
+            <section class="contact" id="contactContent">
+                <div class="contact__container _container">
+
+                    <div class="contact__colums">
                         <div class="contact__content-column">
                             <div class="contact__title title">
                                 Contact
@@ -298,10 +310,16 @@
                                 if you need additional assistance
                             </div>
                         </div>
-
-
                     </div>
-                </section>
+                    <div class="lines-decoration">
+                        <div class="lines-decoration__line"></div>
+                        <div class="lines-decoration__line"></div>
+                        <div class="lines-decoration__line-active"></div>
+                        <div class="lines-decoration__line"></div>
+                        <div class="lines-decoration__line"></div>
+                    </div>
+                </div>
+            </section>
             <!-- </div> -->
         </div>
     </div>

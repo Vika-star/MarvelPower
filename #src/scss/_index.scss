@@ -30,10 +30,14 @@
         z-index: 4;
         display: flex;
         justify-content: center;
-        margin: 0 0 300px 0;
+        margin: 0 0 106px 0;
     }
     &__scrolls {
     }
+    &__decoration-lines {
+        margin: 0 0 25px 0;
+    }
+
     &__scroll-text {
         font-family: "SofiaPro";
         font-style: normal;
@@ -45,7 +49,19 @@
         color: rgba(255, 255, 255, 0.7);
     }
 }
-
+.lines-decoration {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    &__line {
+        border-left: 1px solid #fff;
+        height: 15px;
+    }
+    &__line-active {
+        border-left: 1px solid #f6d330;
+        height: 101px;
+    }
+}
 .about-us {
     z-index: 3;
     padding: 93px 0px;
@@ -149,18 +165,18 @@
 
 .contact {
     background-color: #000000;
-    padding: 101px 0px 288px 0px;
+    padding: 101px 0px 94px 0px;
     color: #fff;
     &__container {
+        z-index: 4;
+    }
+    &__colums {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 4;
+        margin: 0 0 93px 0;
     }
     &__content-column {
-        // &:first-child{
-        //     margin-right: 10px;
-        // }
     }
     &__title {
     }
@@ -223,7 +239,7 @@
         padding: 19px 105px;
         border-radius: 0;
     }
-    &__button{
+    &__button {
         display: flex;
         justify-content: flex-end;
     }

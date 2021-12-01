@@ -122,10 +122,12 @@ ul {
 }
 .page {
     flex: 1 1 auto;
-     background-image: url(../img/background.png);
+}
+.bacground{
+    background-image: url(../img/background.png);
+    background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-
 }
 
 @include tablet {
