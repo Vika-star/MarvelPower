@@ -7215,7 +7215,7 @@ ul {
 }
 
 .scroll-navigation__li {
-  width: 200px;
+  width: 150px;
   display: flex;
   font-family: "SofiaPro";
   font-style: normal;
@@ -7247,10 +7247,11 @@ ul {
 .nav-item.active .scroll-navigation__li::after {
   position: absolute;
   border-bottom: 1px solid;
-  width: 50px;
+  width: 60px;
   content: "";
   top: 50%;
   text-align: right;
+  margin: 0 0 0 5px;
   right: 0px;
 }
 
