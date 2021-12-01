@@ -11,21 +11,20 @@
     <title>Gulp</title>
 </head>
 
-<body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy">
+<!-- <body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy"> -->
+<body>
 
 
     <div class="wrapper">
         <div class="page">
-            <div class="scroll-navigation" id="myScrollspy">
-
-            </div>
+            <!-- <div class="scroll-navigation" id="myScrollspy"></div>
             <div id="list-example" class="list-group">
                 <a class="list-group-item list-group-item-action" href="#bannerContent">Item 1</a>
                 <a class="list-group-item list-group-item-action" href="#aboutContent">Item2</a>
                 <a class="list-group-item list-group-item-action" href="#servicesContent">Item 3</a>
                 <a class="list-group-item list-group-item-action" href="#contactContent">Item 4</a>
-            </div>
-            <!-- <div class="scroll-navigation">
+            </div> -->
+            <div class="scroll-navigation">
                 <div class="scroll-navigation__list">
                     <div class="scroll-navigation__li">
                         <a href="" class="scroll-navigation__link">
@@ -48,7 +47,7 @@
                         </a>
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="vertical-lines">
                 <div class="vertical-lines__container _container">
                     <div class="vertical-lines__list" id="background-lines">
@@ -61,8 +60,8 @@
                 </div>
             </div>
             @@include('_header.html')
-            <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0">
-                <div class="banner" id="bannerContent">
+            <!-- <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"> -->
+                <section class="banner" id="bannerContent">
                     <div class="banner__container _container">
                         <div class="banner__content">
                             <div class="banner__title">
@@ -87,8 +86,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="about-us" id="aboutContent">
+                </section>
+                <section class="about-us" id="aboutContent">
                     <div class="about-us__container _container">
                         <div class="about-us__title title">
                             About Us
@@ -119,8 +118,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="services" id="servicesContent">
+                </section>
+                <section class="services" id="servicesContent">
                     <div class="services__container _container">
                         <div class="services__title title">
                             Services
@@ -216,8 +215,8 @@
                             styles, governance requirements and evolving needs.
                         </div>
                     </div>
-                </div>
-                <div class="contact" id="contactContent">
+                </section>
+                <section class="contact" id="contactContent">
                     <div class="contact__container _container">
                         <div class="contact__content-column">
                             <div class="contact__title title">
@@ -277,8 +276,8 @@
 
 
                     </div>
-                </div>
-            </div>
+                </section>
+            <!-- </div> -->
         </div>
     </div>
     @@include('_footer.html')
