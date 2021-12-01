@@ -4,7 +4,7 @@ if (iconMenu) {
   iconMenu.addEventListener("click", closeMobileMenu);
 }
 
-const menuLinks = document.getElementsByClassName('menu__link');
+const menuLinks = document.getElementsByClassName('link');
 for (const menuLink of menuLinks) {
   menuLink.addEventListener("click", closeMobileMenu)
 }
@@ -64,7 +64,7 @@ $(window).on('activate.bs.scrollspy', function (e, obj) {
   let targetProperties = targetsProperties.get(e.target.id.toString());
 
   setName(targetProperties.name, e.target);
-  setColor(targetProperties.color, e.target)
+  setColor(targetProperties.color)
 });
 
 function setName(name, target) {
@@ -76,7 +76,7 @@ function setName(name, target) {
   target.querySelector('span').innerText = name;
 }
 
-function setColor(color, target) {
+function setColor(color) {
   links.map(item => {
     let link = item;
     link.style.color = color;

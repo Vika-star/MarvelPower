@@ -10,6 +10,9 @@
         // width: 100%;
     }
     &__li {
+    
+        pointer-events: none;
+        cursor: default;
         width: 155px;
         display: flex;
         font-family: "SofiaPro";
@@ -64,7 +67,7 @@
 }
 #bannerContent {
     position: relative;
-    z-index: 4;
+    z-index: 5;
 }
 #aboutContent {
     position: relative;
@@ -78,42 +81,16 @@
     position: relative;
     z-index: 1;
 }
-// #rightcol {
-//     position: absolute; /* Абсолютное позиционирование */
-//     left: 350px; /* Положение левого края */
-//     top: 50px; /* Положение верхнего края */
-//     width: 800px;
-//     height: 400px;
-//     background: #e0e0e0; /* Цвет фона */
-//     border: solid 1px #000; /* Параметры рамки */
-//     z-index: 2;
-// }
 #backgroundLines {
-    position: absolute; /* Абсолютное позиционирование */
-    // left: 0; /* Положение левого края */
-    top: 0; /* Положение верхнего края */
-    height: 100%; /* Ширина слоя */
+    position: absolute; 
+    top: 0; 
+    height: 100%; 
     width: 100%;
-    max-width: 1110px; /* Ширина слоя */
+    max-width: 1110px; 
     min-height: 500px;
-    // background: #800000; /* Цвет фона */
-    color: white; /* Цвет текста */
+    color: white; 
     z-index: 2;
 }
-
-// #middle{
-//     z-index: 1;
-//     position: absolute; /* Абсолютное позиционирование */
-//     // left: 100px;
-//     // margin: 0 400px;/* Положение левого края */
-//     top: 0; /* Положение верхнего края */
-//     height: 100%; /* Ширина слоя */
-//     width: 100%;
-
-//      /* Ширина слоя */
-//     background: rgba(148, 72, 72, 0.9); /* Цвет фона */
-//     color: white; /* Цвет текста */
-// }
 
 .vertical-lines {
     &__container {
@@ -122,10 +99,7 @@
         display: flex;
         justify-content: space-between;
     }
-    // .vertical-lines__item
-
     &__item {
-        // border-left: 1px solid rgba(0, 0, 0, 0.1);
         border-left: 1px solid rgba(0, 0, 0, 0.06);
         height: 3500px;
     }
@@ -140,6 +114,9 @@
     .vertical-lines {
         display: none;
     }
+    
+}
+@include tablet{
     #bannerContent {
         position: relative;
         z-index: 1;
@@ -153,9 +130,4 @@
             z-index: 1;
         }
     }
-    // .header {
-    //     &__logo {
-    //         z-index: 1;
-    //     }
-    // }
 }

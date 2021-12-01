@@ -7224,6 +7224,8 @@ svg {
 }
 
 .scroll-navigation__li {
+  pointer-events: none;
+  cursor: default;
   width: 155px;
   display: flex;
   font-family: "SofiaPro";
@@ -7277,7 +7279,7 @@ svg {
 
 #bannerContent {
   position: relative;
-  z-index: 4;
+  z-index: 5;
 }
 
 #aboutContent {
@@ -7297,17 +7299,12 @@ svg {
 
 #backgroundLines {
   position: absolute;
-  /* Абсолютное позиционирование */
   top: 0;
-  /* Положение верхнего края */
   height: 100%;
-  /* Ширина слоя */
   width: 100%;
   max-width: 1110px;
-  /* Ширина слоя */
   min-height: 500px;
   color: white;
-  /* Цвет текста */
   z-index: 2;
 }
 
@@ -12437,20 +12434,6 @@ svg {
   .vertical-lines {
     display: none;
   }
-
-  #bannerContent {
-    position: relative;
-    z-index: 1;
-  }
-
-  #aboutContent {
-    position: relative;
-    z-index: 1;
-  }
-
-  .banner__title {
-    z-index: 1;
-  }
 }
 
 @media (max-width: 1199.98px) {
@@ -12524,6 +12507,20 @@ svg {
   #sendInfo {
     max-width: none;
     width: 100%;
+  }
+
+  #bannerContent {
+    position: relative;
+    z-index: 1;
+  }
+
+  #aboutContent {
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner__title {
+    z-index: 1;
   }
 }
 
