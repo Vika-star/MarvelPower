@@ -13,6 +13,7 @@
         max-width: 146px;
         width: 100%;
         position: relative;
+        fill: #f6d330;
     }
     &__menu {
         z-index: 4;
@@ -21,7 +22,9 @@
     }
     
 }
-
+svg{
+    fill: red;
+}
 .menu {
     flex: 1 1 auto;
     &__header{

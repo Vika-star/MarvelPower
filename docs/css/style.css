@@ -6851,10 +6851,15 @@ ul {
   max-width: 146px;
   width: 100%;
   position: relative;
+  fill: #f6d330;
 }
 
 .header__menu {
   z-index: 4;
+}
+
+svg {
+  fill: red;
 }
 
 .menu {
@@ -7215,7 +7220,7 @@ ul {
 }
 
 .scroll-navigation__li {
-  width: 150px;
+  width: 155px;
   display: flex;
   font-family: "SofiaPro";
   font-style: normal;
@@ -7224,6 +7229,8 @@ ul {
   line-height: 10px;
   position: relative;
   color: #fff;
+  display: flex;
+  align-items: flex-end;
 }
 
 .scroll-navigation__li::after {
@@ -7234,14 +7241,6 @@ ul {
   top: 50%;
   text-align: right;
   right: 0px;
-}
-
-.scroll-navigation__hiddenText {
-  font-family: "SofiaPro";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 14px;
 }
 
 .nav-item.active .scroll-navigation__li::after {
@@ -7256,7 +7255,12 @@ ul {
 }
 
 .navigationName {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 7px;
+  font-family: "SofiaPro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .line {

@@ -10,7 +10,7 @@
         // width: 100%;
     }
     &__li {
-        width: 150px;
+        width: 155px;
         display: flex;
         font-family: "SofiaPro";
         font-style: normal;
@@ -19,6 +19,8 @@
         line-height: 10px;
         position: relative;
         color: #fff;
+        display: flex;
+        align-items: flex-end;
         &::after {
             position: absolute;
             border-bottom: 1px solid;
@@ -29,19 +31,10 @@
             right: 0px;
         }
     }
-    &__hiddenText {
-        font-family: "SofiaPro";
-        font-style: normal;
-        font-weight: 300;
-        font-size: 14px;
-        line-height: 14px;
-        // display: none;
-    }
     &__link {
     }
 }
 .nav-item.active .scroll-navigation__li{
-    // max-width: 200px;
     &::after {
         position: absolute;
         border-bottom: 1px solid ;
@@ -54,11 +47,14 @@
     }
 }
 .navigationName{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 7px;
+    font-family: "SofiaPro";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
 }
-// .nav-item.active .nav-link{
-//     color: #c4c4c4;
-// }
+
 .line {
     width: 53px;
     height: 0;
