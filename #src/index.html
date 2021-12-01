@@ -11,21 +11,24 @@
     <title>Gulp</title>
 </head>
 
-<!-- <body data-bs-spy="scroll" data-bs-offset="15" data-bs-target="#myScrollspy"> -->
+<body data-spy="scroll" data-offset="0" data-target="#scrollspy-nav">
 
-<body>
+<!-- <body> -->
 
 
     <div class="wrapper">
         <div class="page">
-            <!-- <div class="scroll-navigation" id="myScrollspy"></div>
-            <div id="list-example" class="list-group">
-                <a class="list-group-item list-group-item-action" href="#bannerContent">Item 1</a>
-                <a class="list-group-item list-group-item-action" href="#aboutContent">Item2</a>
-                <a class="list-group-item list-group-item-action" href="#servicesContent">Item 3</a>
-                <a class="list-group-item list-group-item-action" href="#contactContent">Item 4</a>
-            </div> -->
             <div class="scroll-navigation">
+                <nav id="scrollspy-nav" class="scroll-navigation__list navbar">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item"><a class="nav-link" href="#bannerContent">Banner</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutContent">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicesContent">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactContent">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div class="scroll-navigation">
                 <div class="scroll-navigation__list">
                     <div class="scroll-navigation__li">
                         <a href="" class="scroll-navigation__link">
@@ -48,7 +51,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="vertical-lines">
                 <div class="vertical-lines__container _container">
                     <div class="vertical-lines__list" id="backgroundLines">

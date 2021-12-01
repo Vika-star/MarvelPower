@@ -177,6 +177,9 @@
         margin: 0 0 93px 0;
     }
     &__content-column {
+        &:first-child{
+            margin: 0 30px 0 0;
+        }
     }
     &__title {
     }
@@ -195,6 +198,10 @@
     &__link {
         color: #f6d330;
         text-decoration: underline;
+        overflow-wrap: break-word ;
+        &:hover {
+            color: #fff !important;
+        }
     }
     &__descpription {
         font-family: "SofiaPro";
@@ -257,31 +264,41 @@
     width: 100%;
     display: block;
 }
+
+
 @include tablet {
     .contact {
-        &__container {
+        &__colums {
             display: flex;
             flex-direction: column;
+            margin: 0 0 93px 0;
+        }
+        &__content-column{
+            width: 100%;
         }
         &__email {
             margin: 0 0 46px 0;
         }
-    }
-    .banner {
-        padding: 189px 0px 150px 0;
     }
     .about-us {
         &__content {
             display: flex;
             align-items: center;
             flex-direction: column;
-            // flex-wrap: wrap;
             justify-content: space-between;
         }
         &__image {
             padding: 0;
             margin: 0 0 30px 0;
         }
+    }
+    #thanksBlock {
+        max-width: none;
+        width: 100%;
+    }
+    #sendInfo {
+        max-width: none;
+        width: 100%;
     }
 }
 @include small-tablet {
@@ -294,9 +311,6 @@
         &__link {
             color: #f6d330;
             text-decoration: underline;
-            &:hover {
-                color: #fff !important;
-            }
         }
         &__descpription {
             font-size: 25px;
@@ -304,10 +318,8 @@
 
             margin: 0 0 23px 0;
         }
-
-        &__form-send {
-        }
     }
+   
 }
 @include mobile {
     .colums-servies {
@@ -334,14 +346,14 @@
         padding: 53px 0;
     }
     .banner {
-        padding: 250px 0px;
+        padding: 62px 0px 70px 0;
         &__title {
             font-size: 50px;
             line-height: 60px;
         }
-        // &__button {
-        //     margin: 0;
-        // }
+        &__button {
+            margin: 0;
+        }
         &__scrolls {
             display: none;
         }
@@ -360,6 +372,9 @@
         &__content {
             margin: 0;
         }
+    }
+    .lines-decoration{
+        display: none;
     }
 }
 @include mobile-min {

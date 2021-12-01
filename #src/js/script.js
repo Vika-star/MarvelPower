@@ -23,7 +23,7 @@ btnSend.addEventListener("click", function () {
     sendInfo.style.display = "none";
     thanksBlock.style.display = "block";
     for (let i = 0; i < lines.length; i++) {
-      lines[i].style.height = "3400px";
+      lines[i].style.height = "3395px";
     }
   }
 });

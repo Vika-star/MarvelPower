@@ -6861,6 +6861,11 @@ ul {
   flex: 1 1 auto;
 }
 
+.menu__header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu__list {
   display: flex;
   justify-content: end;
@@ -7085,6 +7090,10 @@ ul {
   margin: 0 0 93px 0;
 }
 
+.contact__content-column:first-child {
+  margin: 0 30px 0 0;
+}
+
 .contact__email {
   width: 100%;
   font-family: "SofiaPro";
@@ -7099,6 +7108,11 @@ ul {
 .contact__link {
   color: #f6d330;
   text-decoration: underline;
+  overflow-wrap: break-word;
+}
+
+.contact__link:hover {
+  color: #fff !important;
 }
 
 .contact__descpription {
@@ -7188,14 +7202,6 @@ ul {
   display: block;
 }
 
-.list-group {
-  overflow: hidden;
-  position: fixed;
-  top: 50%;
-  right: 0;
-  z-index: 10;
-}
-
 .scroll-navigation {
   max-width: 100px;
   width: 100%;
@@ -7242,7 +7248,7 @@ ul {
 .line {
   width: 53px;
   height: 0;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   margin: 3px;
   display: inline-block;
 }
@@ -12395,9 +12401,33 @@ ul {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .scroll-navigation {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1220px) {
   ._container {
     padding: 0 30px;
+  }
+
+  .vertical-lines {
+    display: none;
+  }
+
+  #bannerContent {
+    position: relative;
+    z-index: 1;
+  }
+
+  #aboutContent {
+    position: relative;
+    z-index: 1;
+  }
+
+  .banner__title {
+    z-index: 1;
   }
 }
 
@@ -12438,17 +12468,18 @@ ul {
     font-size: 70px;
   }
 
-  .contact__container {
+  .contact__colums {
     display: flex;
     flex-direction: column;
+    margin: 0 0 93px 0;
+  }
+
+  .contact__content-column {
+    width: 100%;
   }
 
   .contact__email {
     margin: 0 0 46px 0;
-  }
-
-  .banner {
-    padding: 189px 0px 150px 0;
   }
 
   .about-us__content {
@@ -12461,6 +12492,16 @@ ul {
   .about-us__image {
     padding: 0;
     margin: 0 0 30px 0;
+  }
+
+  #thanksBlock {
+    max-width: none;
+    width: 100%;
+  }
+
+  #sendInfo {
+    max-width: none;
+    width: 100%;
   }
 }
 
@@ -12659,10 +12700,6 @@ ul {
     text-decoration: underline;
   }
 
-  .contact__link:hover {
-    color: #fff !important;
-  }
-
   .contact__descpription {
     font-size: 25px;
     line-height: 35px;
@@ -12729,12 +12766,16 @@ ul {
   }
 
   .banner {
-    padding: 250px 0px;
+    padding: 62px 0px 70px 0;
   }
 
   .banner__title {
     font-size: 50px;
     line-height: 60px;
+  }
+
+  .banner__button {
+    margin: 0;
   }
 
   .banner__scrolls {
@@ -12758,6 +12799,10 @@ ul {
 
   .services__content {
     margin: 0;
+  }
+
+  .lines-decoration {
+    display: none;
   }
 }
 
