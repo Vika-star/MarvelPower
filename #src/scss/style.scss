@@ -106,7 +106,7 @@ ul {
     flex: 1 1 auto;
 }
 .background {
-    background-image: url(../img/background.png);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 4.66%, #000000 76.78%), url(../img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
