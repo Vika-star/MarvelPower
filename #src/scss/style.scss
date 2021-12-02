@@ -115,9 +115,11 @@ ul {
     flex-direction: column;
     margin: 0 0 55px 0;
     &::after {
-        margin-top: -50px;
-        content: "_";
-        color: #f6d330;
+        content: "";
+        width: 100px;
+        height: 6px;
+        background-color: #f6d330;
+        margin-top: 50px;
     }
 }
 .page {

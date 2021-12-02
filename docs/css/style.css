@@ -6814,9 +6814,11 @@ ul {
 }
 
 .title::after {
-  margin-top: -50px;
-  content: "_";
-  color: #f6d330;
+  content: "";
+  width: 100px;
+  height: 6px;
+  background-color: #f6d330;
+  margin-top: 50px;
 }
 
 .page {
@@ -6839,7 +6841,7 @@ ul {
 
 .header__container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   min-height: 60px;
 }
 
@@ -6856,10 +6858,6 @@ ul {
 
 .header__menu {
   z-index: 4;
-}
-
-svg {
-  fill: red;
 }
 
 .menu {
@@ -6909,7 +6907,7 @@ svg {
 /*==========================================*/
 
 .banner {
-  padding: 189px 0px 55px 0;
+  padding: 328px 0px 55px 0;
 }
 
 .banner__container {
@@ -7008,15 +7006,20 @@ svg {
 
 .services {
   background-color: #f6d330;
-  padding: 101px 0px 92px 0px;
+  padding: 101px 0px 139px 0px;
 }
 
 .services__container {
   z-index: 4;
 }
 
+.services__title {
+  margin: 0 0 45px 0;
+}
+
 .services__title::after {
-  color: #ffffff;
+  margin: 62px 0 0 0;
+  background-color: #ffffff;
 }
 
 .services__text {
@@ -7024,6 +7027,10 @@ svg {
   font-size: 18px;
   line-height: 26px;
   margin: 0 0 47px 0;
+}
+
+.services__text:last-child {
+  margin: 0;
 }
 
 .services__content {
@@ -7047,6 +7054,7 @@ svg {
   font-size: 40px;
   line-height: 42px;
   margin: 0 0 33px 0;
+  max-width: 300px;
 }
 
 .colums-servies__text {
@@ -7059,7 +7067,7 @@ svg {
 }
 
 .colums-servies__list {
-  padding: 0;
+  padding: 0 0 0 25px;
   margin: 0 0 41px 0;
 }
 
@@ -7069,14 +7077,16 @@ svg {
 
 .colums-servies__li::before {
   content: "∎";
+  font-size: 8px;
   color: #ffffff;
+  margin: 0px 15px 0px -25px;
 }
 
 .colums-servies__arrow {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
+  margin: 0 0 0 30px;
   background-color: rgba(255, 255, 255, 0);
   border: 0px;
 }
@@ -7104,6 +7114,14 @@ svg {
 
 .contact__content-column:first-child {
   margin: 0 30px 0 0;
+}
+
+.contact__title {
+  margin: 0 0 35px 0;
+}
+
+.contact__title::after {
+  margin: 40px 0 0 0;
 }
 
 .contact__email {
@@ -7206,82 +7224,78 @@ svg {
   max-width: 442px;
   width: 100%;
   display: none;
+  padding: 154px 0 0 0;
 }
 
 #sendInfo {
   max-width: 445px;
   width: 100%;
   display: block;
+  padding: 154px 0 0 0;
 }
 
-.scroll-navigation {
-  width: 100%;
-}
-
-.scroll-navigation__list {
-  overflow: hidden;
+.scroll__wrapper {
   position: fixed;
   top: 50%;
+  transform: translateY(-50%);
   right: 0;
-  z-index: 10;
+  z-index: 9999;
+  color: #000;
 }
 
-.scroll-navigation__li {
-  pointer-events: none;
-  cursor: default;
-  width: 155px;
+.scroll__wrapper-item {
   display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 26px;
+}
+
+.scroll__wrapper-item:last-child {
+  margin-bottom: 0px;
+}
+
+.scroll__number {
   font-family: "SofiaPro";
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
   line-height: 10px;
-  position: relative;
-  color: #fff;
-  display: flex;
-  align-items: flex-end;
+  margin: 0 5px 0 0;
 }
 
-.scroll-navigation__li::after {
-  position: absolute;
-  border-bottom: 1px solid;
-  width: 21px;
-  content: "";
-  top: 50%;
-  text-align: right;
-  right: 0px;
-}
-
-.nav-item.active .scroll-navigation__li {
-  width: 150px;
-}
-
-.nav-item.active .scroll-navigation__li::after {
-  position: absolute;
-  border-bottom: 1px solid;
-  width: 60px;
-  content: "";
-  top: 50%;
-  text-align: right;
-  margin: 0 0 0 5px;
-  right: 0px;
-}
-
-.navigationName {
-  margin: 0 0 0 7px;
+.scroll__title {
   font-family: "SofiaPro";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
   line-height: 14px;
+  display: none;
+  margin: 0 5px 0 0;
 }
 
-.line {
-  width: 53px;
-  height: 0;
-  border: 1px solid #c4c4c4;
-  margin: 3px;
-  display: inline-block;
+.scroll__line {
+  width: 21px;
+  height: 1px;
+  background-color: #000;
+  transition: all 0.2s;
+}
+
+.scroll__wrapper-item.activeLine .scroll__line {
+  width: 60px;
+  transition: all 0.2s;
+}
+
+.scroll__wrapper-item.activeLine .scroll__title {
+  display: block;
+}
+
+.scroll__wrapper.white .scroll__line {
+  background-color: #fff;
+}
+
+.scroll__wrapper.white .scroll__title,
+.scroll__wrapper.white .scroll__number {
+  color: #fff;
 }
 
 #bannerSection {
@@ -9359,8 +9373,8 @@ svg {
 @media (min-width: 991.98px) {
   .menu__link:hover {
     color: #000 !important;
-    padding-top: 6px;
-    border-bottom: 1px solid #f6d330;
+    padding-top: 30px;
+    border-bottom: 3px solid #f6d330;
   }
 }
 
@@ -12428,7 +12442,7 @@ svg {
 }
 
 @media screen and (max-width: 1366px) {
-  .scroll-navigation {
+  .scroll__wrapper {
     display: none;
   }
 }
@@ -12514,6 +12528,10 @@ svg {
   #sendInfo {
     max-width: none;
     width: 100%;
+  }
+
+  .colums-servies__item {
+    margin-bottom: 58px;
   }
 
   #bannerSection {
@@ -12692,7 +12710,7 @@ svg {
     width: 100%;
     top: 0;
     left: 0;
-    height: 80px;
+    height: 100px;
     padding: 20px 0;
     background-color: #000000;
   }
@@ -12715,6 +12733,14 @@ svg {
     font-weight: 600;
     font-size: 40px;
     line-height: 40px;
+  }
+
+  .colums-servies__title {
+    max-width: none;
+  }
+
+  .colums-servies__item {
+    margin-bottom: 58px;
   }
 
   .contact__email {
@@ -12779,10 +12805,6 @@ svg {
     font-size: 14px;
     line-height: 16px;
     color: #0b0d21;
-  }
-
-  .colums-servies__item {
-    margin-bottom: 58px;
   }
 
   .contact {

@@ -3,7 +3,7 @@
     padding: 50px 0 0 0;
     &__container {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         min-height: 60px;
     }
     &__logo {
@@ -21,9 +21,6 @@
     &_action {
     }
     
-}
-svg{
-    fill: red;
 }
 .menu {
     flex: 1 1 auto;
@@ -56,8 +53,8 @@ svg{
         @media (min-width: $md2) {
             &:hover {
                 color: #000 !important;
-                padding-top: 6px;
-                border-bottom: 1px solid #f6d330;
+                padding-top: 30px;
+                border-bottom: 3px solid #f6d330;
                 // bottom: 6px;
                 // text-decoration: underline #f6d330;
             }
@@ -158,7 +155,7 @@ svg{
                 width: 100%;
                 top: 0;
                 left: 0;
-                height: 80px;
+                height: 100px;
                 padding: 20px 0;
                 background-color: #000000;
             }

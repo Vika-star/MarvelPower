@@ -1,71 +1,123 @@
-.scroll-navigation {
-    // max-width: 100px;
-    width: 100%;
-    &__list {
-        overflow: hidden;
+.scroll {
+    &__wrapper {
         position: fixed;
         top: 50%;
+        transform: translateY(-50%);
         right: 0;
-        z-index: 10;
-        // width: 100%;
+        z-index: 9999;
+        color: #000;
     }
-    &__li {
-        
-        pointer-events: none;
-        cursor: default;
-        width: 155px;
+    &__wrapper-item {
         display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 26px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    &__number {
         font-family: "SofiaPro";
         font-style: normal;
         font-weight: 400;
         font-size: 10px;
         line-height: 10px;
-        position: relative;
-        color: #fff;
-        display: flex;
-        align-items: flex-end;
-        &::after {
-            position: absolute;
-            border-bottom: 1px solid;
-            width: 21px;
-            content: "";
-            top: 50%;
-            text-align: right;
-            right: 0px;
-        }
+        margin: 0 5px 0 0;
     }
-    &__link {
+    &__title {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        display: none;
+        margin: 0 5px 0 0 ;
+    }
+    &__line {
+        width: 21px;
+        height: 1px;
+        background-color: #000;
+        transition: all 0.2s;
     }
 }
-.nav-item.active .scroll-navigation__li{
-    width: 150px;
-    &::after {
-        position: absolute;
-        border-bottom: 1px solid ;
+.scroll__wrapper-item.activeLine {
+    .scroll__line {
         width: 60px;
-        content: "";
-        top: 50%;
-        text-align: right;
-        margin: 0 0 0 5px;
-        right: 0px;
+        transition: all 0.2s;
+    }
+    .scroll__title {
+        display: block;
     }
 }
-.navigationName{
-    margin: 0 0 0 7px;
-    font-family: "SofiaPro";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 14px;
+.scroll__wrapper.white {
+    .scroll__line {
+        background-color: #fff;
+    }
+    .scroll__title,
+    .scroll__number {
+        color: #fff;
+    }
 }
+// .scroll-navigation {
+//     // max-width: 100px;
+//     width: 100%;
+//     &__list {
+//         overflow: hidden;
+//         position: fixed;
+//         top: 50%;
+//         right: 0;
+//         z-index: 10;
+//         // width: 100%;
+//     }
+//     &__li {
+//         pointer-events: none;
+//         cursor: default;
+//         width: 155px;
+//         display: flex;
+//         font-family: "SofiaPro";
+//         font-style: normal;
+//         font-weight: 400;
+//         font-size: 10px;
+//         line-height: 10px;
+//         position: relative;
+//         color: #fff;
+//         display: flex;
+//         align-items: flex-end;
+//         &::after {
+//             position: absolute;
+//             border-bottom: 1px solid;
+//             width: 21px;
+//             content: "";
+//             top: 50%;
+//             text-align: right;
+//             right: 0px;
+//         }
+//     }
+//     &__link {
+//     }
+// }
+// .nav-item.active .scroll-navigation__li {
+//     width: 150px;
+//     &::after {
+//         position: absolute;
+//         border-bottom: 1px solid;
+//         width: 60px;
+//         content: "";
+//         top: 50%;
+//         text-align: right;
+//         margin: 0 0 0 5px;
+//         right: 0px;
+//     }
+// }
+// .navigationName {
+//     margin: 0 0 0 7px;
+//     font-family: "SofiaPro";
+//     font-style: normal;
+//     font-weight: 300;
+//     font-size: 14px;
+//     line-height: 14px;
+// }
 
-.line {
-    width: 53px;
-    height: 0;
-    border: 1px solid #c4c4c4;
-    margin: 3px;
-    display: inline-block;
-}
 #bannerSection {
     position: relative;
     z-index: 5;
@@ -83,13 +135,13 @@
     z-index: 1;
 }
 #backgroundLines {
-    position: absolute; 
-    top: 0; 
-    height: 100%; 
+    position: absolute;
+    top: 0;
+    height: 100%;
     width: 100%;
-    max-width: 1110px; 
+    max-width: 1110px;
     min-height: 500px;
-    color: white; 
+    color: white;
     z-index: 2;
 }
 
@@ -107,7 +159,7 @@
 }
 
 @include small-desktop {
-    .scroll-navigation {
+    .scroll__wrapper {
         display: none;
     }
 }
@@ -115,9 +167,8 @@
     .vertical-lines {
         display: none;
     }
-    
 }
-@include tablet{
+@include tablet {
     #bannerSection {
         position: relative;
         z-index: 1;
