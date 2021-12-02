@@ -7,14 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <title>Gulp</title>
+    <link rel="shortcut icon" href="./img/icon/marvel.ico" type="image/x-icon">
+    <title>Marvel Power Group</title>
 </head>
 
-<body data-spy="scroll" data-offset="0" data-target="#scrollspy-nav">
-    <div id="bannerContent"></div>
+<body>
+
     <div class="wrapper">
         <div class="page">
 
@@ -57,49 +55,6 @@
                 </a>
             </div>
 
-            <!-- <div class="scroll-navigation__list">
-                <nav id="scrollspy-nav" class="navbar navbar-default">
-                    <ul class="nav flex-column">
-                        <li class="nav-item" id="bannerNavigation"><a class="scroll-navigation__li nav-link"
-                                href="#bannerContent">01 <span class="navigationName"></span></a>
-                        </li>
-                        <li class="nav-item" id="aboutUsNavigation"><a class="scroll-navigation__li nav-link"
-                                href="#aboutContent">02 <span class="navigationName"></span></a>
-                        </li>
-                        <li class="nav-item" id="servicesNavigation"><a class="scroll-navigation__li nav-link"
-                                href="#servicesContent">03 <span class="navigationName"></span></a>
-                        </li>
-                        <li class="nav-item" id="contactNavigation"><a class="scroll-navigation__li nav-link"
-                                href="#contactContent">04 <span class="navigationName"></span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div> -->
-
-            <!-- <div class="scroll-navigation">
-                <div class="scroll-navigation__list">
-                    <div class="scroll-navigation__li">
-                        <a href="" class="scroll-navigation__link">
-                            01 <span class="scroll-navigation__hiddenText" id="homeBlock">Home</span>
-                        </a>
-                    </div>
-                    <div class="scroll-navigation__li">
-                        <a href="" class="scroll-navigation__link">
-                            02 <span class="scroll-navigation__hiddenText" id="aboutBlock">About</span>
-                        </a>
-                    </div>
-                    <div class="scroll-navigation__li">
-                        <a href="" class="scroll-navigation__link">
-                            03 <span class="scroll-navigation__hiddenText" id="servicesBlock">Services</span>
-                        </a>
-                    </div>
-                    <div class="scroll-navigation__li">
-                        <a href="" class="scroll-navigation__link">
-                            04 <span class="scroll-navigation__hiddenText" id="contactBlock">Contact</span>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
             <div class="vertical-lines">
                 <div class="vertical-lines__container _container">
                     <div class="vertical-lines__list" id="backgroundLines">
@@ -111,9 +66,11 @@
                     </div>
                 </div>
             </div>
-            <div class="bacground">
+
+            <div class="background">
+
                 @@include('_header.html')
-                <!-- <div class="scrollspy" data-spy="scroll" data-target="#list-example" data-offset="0"> -->
+
                 <section class="banner" id="bannerSection">
                     <div class="banner__container _container">
 
@@ -129,11 +86,10 @@
                                 transportation
                                 sectors.
                             </div>
-                            <div id="aboutContent"></div>
                         </div>
+
                         <div class="banner__button">
                             <a href="#contactSection" class="btn">Contact us</a>
-                            <!-- <input type="button" value="CONTACT US" class="btn"> -->
                         </div>
 
                         <div class="banner__scrolls">
@@ -148,15 +104,18 @@
                                 Scroll for more
                             </div>
                         </div>
+
                     </div>
                 </section>
             </div>
+
             <section class="about-us" id="aboutSection">
                 <div class="about-us__container _container">
+
                     <div class="about-us__title title">
                         About Us
-                        <div id="servicesContent"></div>
                     </div>
+
                     <div class="about-us__content">
                         <div class="about-us__image">
                             <img src="./img/about-us/about.jpg" alt="about us">
@@ -182,10 +141,13 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
+
             <section class="services" id="servicesSection">
                 <div class="services__container _container">
+
                     <div class="services__title title">
                         Services
                     </div>
@@ -200,6 +162,7 @@
                         deep expertise
                         to addressing these challenges.
                     </div>
+
                     <div class="services__content">
                         <div class="services__colums colums-servies">
                             <div class="colums-servies__item">
@@ -207,7 +170,7 @@
                                     Enterprise Strategy
                                 </div>
                                 <div class="colums-servies__text">
-                                    <ul class="colums-servies__list margin-list">
+                                    <ul class="colums-servies__list">
                                         <li class="colums-servies__li">
                                             Procurement and investment diligence
                                         </li>
@@ -222,14 +185,14 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#bannerContent" class="colums-servies__arrow"></a>
+                                <a href="#" class="colums-servies__arrow"></a>
                             </div>
                             <div class="colums-servies__item">
                                 <div class="colums-servies__title">
                                     Wholesale Power
                                 </div>
                                 <div class="colums-servies__text">
-                                    <ul class="colums-servies__list margin-list">
+                                    <ul class="colums-servies__list">
                                         <li class="colums-servies__li">
                                             Commodity advisory and RFPs
                                         </li>
@@ -251,16 +214,13 @@
                                 <div class="colums-servies__title">
                                     Market Development
                                 </div>
-
-
                                 <div class="colums-servies__text">
-                                    <ul class="colums-servies__list margin-list">
+                                    <ul class="colums-servies__list">
                                         <li class="colums-servies__li">
                                             New venture setup </li>
                                         <li class="colums-servies__li">
                                             Customer engagement and retention
                                         </li>
-                                        <div id="contactContent"></div>
                                         <li class="colums-servies__li">
                                             Project development and regulatory support
                                         </li>
@@ -273,6 +233,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="services__text text">
                         Our clients are time constrained and under-resourced. Agendas shift, budgets move and
                         priorities
@@ -280,8 +241,10 @@
                         working
                         styles, governance requirements and evolving needs.
                     </div>
+
                 </div>
             </section>
+
             <section class="contact" id="contactSection">
                 <div class="contact__container _container">
 
@@ -296,6 +259,7 @@
                                     class="contact__link">info@marvelpowergroup.com</a>
                             </div>
                         </div>
+
                         <div class="contact__content-column" id="sendInfo">
                             <div class="contact__descpription">
                                 Stay in the loop<br>
@@ -316,19 +280,9 @@
                                         <button type="button" class="send-form__btn btn" id="sendFrom">Send</button>
                                     </div>
                                 </form>
-                                <!-- <form name="send">
-                                <div class="send-form__name">
-                                    <input type="text" name="name" id="" placeholder="Name *">
-                                </div>
-                                <div class="send-form__e-mail">
-                                    <input type="text" name="email" id="" placeholder="E-mail *">
-                                </div>
-                                <div class="send-form__send">
-                                    <button type="submit" class="send-form__btn btn">Send</button>
-                                </div>
-                            </form> -->
                             </div>
                         </div>
+
                         <div class="contact__content-column" id="thanksBlock">
                             <div class="contact__descpription">
                                 Thank you.<br>
@@ -341,6 +295,7 @@
                                 if you need additional assistance
                             </div>
                         </div>
+                        
                     </div>
                     <div class="lines-decoration">
                         <div class="lines-decoration__line"></div>
@@ -351,7 +306,7 @@
                     </div>
                 </div>
             </section>
-            <!-- </div> -->
+
         </div>
     </div>
     <script src="js/script.js"></script>

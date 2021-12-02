@@ -40,6 +40,7 @@
         transition: all 0.2s;
     }
 }
+
 .scroll__wrapper-item.activeLine {
     .scroll__line {
         width: 60px;
@@ -49,74 +50,18 @@
         display: block;
     }
 }
+
 .scroll__wrapper.white {
     .scroll__line {
         background-color: #fff;
+    }
+    .scroll__line:hover{
     }
     .scroll__title,
     .scroll__number {
         color: #fff;
     }
 }
-// .scroll-navigation {
-//     // max-width: 100px;
-//     width: 100%;
-//     &__list {
-//         overflow: hidden;
-//         position: fixed;
-//         top: 50%;
-//         right: 0;
-//         z-index: 10;
-//         // width: 100%;
-//     }
-//     &__li {
-//         pointer-events: none;
-//         cursor: default;
-//         width: 155px;
-//         display: flex;
-//         font-family: "SofiaPro";
-//         font-style: normal;
-//         font-weight: 400;
-//         font-size: 10px;
-//         line-height: 10px;
-//         position: relative;
-//         color: #fff;
-//         display: flex;
-//         align-items: flex-end;
-//         &::after {
-//             position: absolute;
-//             border-bottom: 1px solid;
-//             width: 21px;
-//             content: "";
-//             top: 50%;
-//             text-align: right;
-//             right: 0px;
-//         }
-//     }
-//     &__link {
-//     }
-// }
-// .nav-item.active .scroll-navigation__li {
-//     width: 150px;
-//     &::after {
-//         position: absolute;
-//         border-bottom: 1px solid;
-//         width: 60px;
-//         content: "";
-//         top: 50%;
-//         text-align: right;
-//         margin: 0 0 0 5px;
-//         right: 0px;
-//     }
-// }
-// .navigationName {
-//     margin: 0 0 0 7px;
-//     font-family: "SofiaPro";
-//     font-style: normal;
-//     font-weight: 300;
-//     font-size: 14px;
-//     line-height: 14px;
-// }
 
 #bannerSection {
     position: relative;
@@ -163,11 +108,13 @@
         display: none;
     }
 }
+
 @include small-desktop-min {
     .vertical-lines {
         display: none;
     }
 }
+
 @include tablet {
     #bannerSection {
         position: relative;

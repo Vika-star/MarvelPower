@@ -20,17 +20,14 @@
     }
     &_action {
     }
-    
 }
+
 .menu {
     flex: 1 1 auto;
     &__header{
         display: flex;
         justify-content: space-between;
     }
-    // &__logo{
-    //     display: none;
-    // }
     &__icon {
     }
     &__body {
@@ -53,17 +50,14 @@
         @media (min-width: $md2) {
             &:hover {
                 color: #000 !important;
-                padding-top: 30px;
+                margin-top: 30px;
                 border-bottom: 3px solid #f6d330;
-                // bottom: 6px;
-                // text-decoration: underline #f6d330;
             }
         }
     }
     &__button {
         display: none;
         justify-content: center;
-        // margin: 0 0 106px 0;
     }
 }
 
@@ -74,13 +68,17 @@
 @include small-tablet {
     .header {
         padding: 20px 0 0 0;
+        &__container{
+            display: flex;
+        align-items: center;
+        }
         &__logo-img {
             max-width: 100px;
         }
     }
     .menu {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         &__button {
             display: flex;
             justify-content: center;
@@ -139,9 +137,8 @@
     .menu {
         &__body {
             position: fixed;
-            // position: absolute;
             top: 0;
-            left: -130%;
+            left: -100%;
             width: 100%;
             height: 100%;
             background-color: rgba(255, 255, 255);

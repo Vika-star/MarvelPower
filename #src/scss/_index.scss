@@ -14,7 +14,6 @@
 
         margin: 0 0 41px 0;
     }
-
     &__text {
         z-index: 4;
         color: #ffffff;
@@ -37,7 +36,6 @@
     &__decoration-lines {
         margin: 0 0 25px 0;
     }
-
     &__scroll-text {
         font-family: "SofiaPro";
         font-style: normal;
@@ -49,6 +47,7 @@
         color: rgba(255, 255, 255, 0.7);
     }
 }
+
 .lines-decoration {
     display: flex;
     justify-content: space-between;
@@ -62,6 +61,7 @@
         height: 101px;
     }
 }
+
 .about-us {
     z-index: 3;
     padding: 93px 0px;
@@ -72,13 +72,9 @@
     &__content {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
     &__image {
-        padding: 0 10px 10px 0;
-        img {
-            width: 100%;
-        }
+        margin: 0 68px 0 0;
     }
     &__text {
         max-width: 490px;
@@ -109,7 +105,7 @@
         font-size: 18px;
         line-height: 26px;
         margin: 0 0 47px 0;
-        &:last-child{
+        &:last-child {
             margin: 0;
         }
     }
@@ -119,6 +115,7 @@
     &__colums {
     }
 }
+
 .colums-servies {
     display: flex;
     flex-wrap: wrap;
@@ -169,11 +166,7 @@
         }
     }
 }
-// .colums-servies__list.margin-list{
-//     .colums-servies__li::before{
-//         margin: 0px 12px 0px -16px;
-//     }
-// }
+
 .contact {
     background-color: #000000;
     padding: 101px 0px 94px 0px;
@@ -196,10 +189,8 @@
         margin: 0 0 35px 0;
         &::after {
             margin: 40px 0 0 0;
-            // background-color: #ffffff;
         }
     }
-
     &__email {
         width: 100%;
         font-family: "SofiaPro";
@@ -226,7 +217,6 @@
         line-height: 42px;
         margin: 0 0 41px 0;
     }
-
     &__form-send {
     }
     &__thanks {
@@ -243,6 +233,7 @@
         }
     }
 }
+
 .send-form {
     input::placeholder {
         font-family: "SofiaPro";
@@ -269,6 +260,7 @@
         justify-content: flex-end;
     }
 }
+
 #thanksBlock {
     max-width: 442px;
     width: 100%;
@@ -295,6 +287,9 @@
         &__email {
             margin: 0 0 46px 0;
         }
+        &__content-column:first-child {
+            margin: 0;
+        }
     }
     .about-us {
         &__content {
@@ -304,106 +299,167 @@
             justify-content: space-between;
         }
         &__image {
-            padding: 0;
-            margin: 0 0 30px 0;
+            margin: 0 0 50px 0;
         }
     }
     #thanksBlock {
         max-width: none;
         width: 100%;
+        margin-top: 46px;
+        padding: 0;
     }
     #sendInfo {
+        margin-top: 46px;
+        padding: 0;
         max-width: none;
         width: 100%;
     }
     .colums-servies {
         &__item {
             margin-bottom: 58px;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 }
-@include small-tablet {
-    .colums-servies {
-        &__title {
-            max-width: none;
-        }
-        &__item {
-            margin-bottom: 58px;
-        }
-    }
-    .contact {
-        &__email {
-            max-width: none;
-            font-size: 25px;
-            line-height: 30px;
-        }
-        &__link {
-            color: #f6d330;
-            text-decoration: underline;
-        }
-        &__descpription {
-            font-size: 25px;
-            line-height: 35px;
 
-            margin: 0 0 23px 0;
-        }
-    }
-}
 @include mobile {
-    .colums-servies {
-        &__title {
-            font-size: 25px;
-            line-height: 42px;
-            margin: 0 0 22px 0;
-        }
-        &__text {
-            font-weight: 300;
-            font-size: 14px;
-            line-height: 16px;
-
-            color: #0b0d21;
-        }
-    }
-    .contact {
-        padding: 55px 0 70px 0;
-    }
-    .about-us {
-        padding: 53px 0;
-    }
     .banner {
         padding: 62px 0px 70px 0;
         &__title {
             font-size: 50px;
             line-height: 60px;
+            margin: 0 0 18px 0;
+        }
+        &__content {
+            margin: 0 0 44px 0;
         }
         &__button {
             margin: 0;
         }
-        &__scrolls {
+        &__scroll-text {
             display: none;
-        }
-    }
-    .services {
-        padding: 54px 0 62px 0;
-        &__title {
-            margin: 0 0 25px 0;
-        }
-        &__text {
-            max-width: 837px;
-            font-size: 14px;
-            line-height: 16px;
-            margin: 0 0 47px 0;
-        }
-        &__content {
-            margin: 0;
         }
     }
     .lines-decoration {
         display: none;
     }
-}
-@include mobile-min {
-    .banner {
-        padding: 150px 0px;
+
+    .about-us {
+        padding: 53px 0px;
+        &__title {
+            margin-bottom: 35px;
+            &::after {
+                margin-top: 34px;
+            }
+        }
+        &__image {
+            margin: 0 0 30px 0;
+            img {
+                width: 100%;
+            }
+        }
+        &__text-item {
+            margin: 0 0 20px 0;
+        }
+    }
+
+    .services {
+        padding: 54px 0px 62px 0px;
+        &__title {
+            margin: 0 0 25px 0;
+            &::after {
+                margin: 35px 0 0 0;
+            }
+        }
+        &__text {
+            max-width: none;
+            margin: 0 0 56px 0;
+        }
+        &__content {
+            margin: 0 0 40px 0;
+        }
+    }
+
+    .colums-servies {
+        &__item {
+            max-width: none;
+            margin: 0 0 40px 0;
+        }
+        &__title {
+            font-size: 25px;
+            line-height: 50px;
+            margin: 0 0 26px 0;
+        }
+        &__text {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__list {
+            padding: 0;
+            margin: 0 0 26px 0;
+        }
+        &__li {
+            margin: 0 0 7px 0;
+            &::before {
+                content: "\220E";
+                font-size: 6px;
+                color: #ffffff;
+                margin: 0;
+            }
+        }
+        &__arrow {
+            margin: 0 0 0 12px;
+        }
+    }
+
+    .contact {
+        padding: 55px 0px 70px 0px;
+        &__colums {
+            margin: 0;
+        }
+        &__content-column {
+            &:first-child {
+                margin: 0;
+            }
+        }
+        &__title {
+            margin: 0 0 26px 0;
+            &::after {
+                margin: 36px 0 0 0;
+            }
+        }
+        &__email {
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0;
+        }
+        &__link {
+            color: #f6d330;
+            text-decoration: underline;
+            overflow-wrap: break-word;
+            &:hover {
+                color: #fff !important;
+            }
+        }
+        &__descpription {
+            font-size: 25px;
+            line-height: 35px;
+            margin: 0 0 23px 0;
+        }
+        &__thanks {
+            font-size: 14px;
+        }
+    }
+
+    .send-form {
+        input {
+            margin: 0 0 10px 0;
+        }
+        &__btn {
+            padding: 19px 67px;
+            border-radius: 0;
+        }
     }
 }

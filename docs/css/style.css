@@ -6752,8 +6752,6 @@ ul {
   overflow: hidden;
 }
 
-/*==========================================*/
-
 ._container {
   max-width: 1110px;
   margin: 0 auto;
@@ -6770,6 +6768,7 @@ ul {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
   padding: 19px 40px 15px 40px;
   font-family: "SofiaPro";
   font-style: normal;
@@ -6784,22 +6783,6 @@ ul {
 .btn::after {
   content: url("../img/icon/btn-icon.svg");
   margin-left: 5px;
-}
-
-.product-img {
-  margin: auto 0;
-}
-
-.product-img img {
-  max-width: 100%;
-}
-
-.product-title {
-  font-family: "Hind Madurai";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: calc(36 / 26 * 100%);
 }
 
 .title {
@@ -6825,7 +6808,7 @@ ul {
   flex: 1 1 auto;
 }
 
-.bacground {
+.background {
   background-image: url(../img/background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -6982,15 +6965,10 @@ ul {
 .about-us__content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .about-us__image {
-  padding: 0 10px 10px 0;
-}
-
-.about-us__image img {
-  width: 100%;
+  margin: 0 68px 0 0;
 }
 
 .about-us__text {
@@ -9373,7 +9351,7 @@ ul {
 @media (min-width: 991.98px) {
   .menu__link:hover {
     color: #000 !important;
-    padding-top: 30px;
+    margin-top: 30px;
     border-bottom: 3px solid #f6d330;
   }
 }
@@ -12508,6 +12486,10 @@ ul {
     margin: 0 0 46px 0;
   }
 
+  .contact__content-column:first-child {
+    margin: 0;
+  }
+
   .about-us__content {
     display: flex;
     align-items: center;
@@ -12516,22 +12498,29 @@ ul {
   }
 
   .about-us__image {
-    padding: 0;
-    margin: 0 0 30px 0;
+    margin: 0 0 50px 0;
   }
 
   #thanksBlock {
     max-width: none;
     width: 100%;
+    margin-top: 46px;
+    padding: 0;
   }
 
   #sendInfo {
+    margin-top: 46px;
+    padding: 0;
     max-width: none;
     width: 100%;
   }
 
   .colums-servies__item {
     margin-bottom: 58px;
+  }
+
+  .colums-servies__item:last-child {
+    margin-bottom: 0;
   }
 
   #bannerSection {
@@ -12623,13 +12612,18 @@ ul {
     padding: 20px 0 0 0;
   }
 
+  .header__container {
+    display: flex;
+    align-items: center;
+  }
+
   .header__logo-img {
     max-width: 100px;
   }
 
   .menu {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
   }
 
   .menu__button {
@@ -12695,7 +12689,7 @@ ul {
   .menu__body {
     position: fixed;
     top: 0;
-    left: -130%;
+    left: -100%;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -12734,31 +12728,6 @@ ul {
     font-size: 40px;
     line-height: 40px;
   }
-
-  .colums-servies__title {
-    max-width: none;
-  }
-
-  .colums-servies__item {
-    margin-bottom: 58px;
-  }
-
-  .contact__email {
-    max-width: none;
-    font-size: 25px;
-    line-height: 30px;
-  }
-
-  .contact__link {
-    color: #f6d330;
-    text-decoration: underline;
-  }
-
-  .contact__descpription {
-    font-size: 25px;
-    line-height: 35px;
-    margin: 0 0 23px 0;
-  }
 }
 
 @media (max-width: 575.98px) {
@@ -12794,25 +12763,19 @@ ul {
 }
 
 @media screen and (max-width: 575px) {
-  .colums-servies__title {
-    font-size: 25px;
-    line-height: 42px;
-    margin: 0 0 22px 0;
+  .title {
+    font-size: 40px;
+    line-height: 50px;
   }
 
-  .colums-servies__text {
-    font-weight: 300;
+  .title::after {
+    width: 65px;
+    height: 4px;
+  }
+
+  .text {
     font-size: 14px;
-    line-height: 16px;
-    color: #0b0d21;
-  }
-
-  .contact {
-    padding: 55px 0 70px 0;
-  }
-
-  .about-us {
-    padding: 53px 0;
+    line-height: 20px;
   }
 
   .banner {
@@ -12822,47 +12785,165 @@ ul {
   .banner__title {
     font-size: 50px;
     line-height: 60px;
+    margin: 0 0 18px 0;
+  }
+
+  .banner__content {
+    margin: 0 0 44px 0;
   }
 
   .banner__button {
     margin: 0;
   }
 
-  .banner__scrolls {
+  .banner__scroll-text {
     display: none;
   }
 
+  .lines-decoration {
+    display: none;
+  }
+
+  .about-us {
+    padding: 53px 0px;
+  }
+
+  .about-us__title {
+    margin-bottom: 35px;
+  }
+
+  .about-us__title::after {
+    margin-top: 34px;
+  }
+
+  .about-us__image {
+    margin: 0 0 30px 0;
+  }
+
+  .about-us__image img {
+    width: 100%;
+  }
+
+  .about-us__text-item {
+    margin: 0 0 20px 0;
+  }
+
   .services {
-    padding: 54px 0 62px 0;
+    padding: 54px 0px 62px 0px;
   }
 
   .services__title {
     margin: 0 0 25px 0;
   }
 
+  .services__title::after {
+    margin: 35px 0 0 0;
+  }
+
   .services__text {
-    max-width: 837px;
-    font-size: 14px;
-    line-height: 16px;
-    margin: 0 0 47px 0;
+    max-width: none;
+    margin: 0 0 56px 0;
   }
 
   .services__content {
+    margin: 0 0 40px 0;
+  }
+
+  .colums-servies__item {
+    max-width: none;
+    margin: 0 0 40px 0;
+  }
+
+  .colums-servies__title {
+    font-size: 25px;
+    line-height: 50px;
+    margin: 0 0 26px 0;
+  }
+
+  .colums-servies__text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .colums-servies__list {
+    padding: 0;
+    margin: 0 0 26px 0;
+  }
+
+  .colums-servies__li {
+    margin: 0 0 7px 0;
+  }
+
+  .colums-servies__li::before {
+    content: "∎";
+    font-size: 6px;
+    color: #ffffff;
     margin: 0;
   }
 
-  .lines-decoration {
-    display: none;
+  .colums-servies__arrow {
+    margin: 0 0 0 12px;
+  }
+
+  .contact {
+    padding: 55px 0px 70px 0px;
+  }
+
+  .contact__colums {
+    margin: 0;
+  }
+
+  .contact__content-column:first-child {
+    margin: 0;
+  }
+
+  .contact__title {
+    margin: 0 0 26px 0;
+  }
+
+  .contact__title::after {
+    margin: 36px 0 0 0;
+  }
+
+  .contact__email {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0;
+  }
+
+  .contact__link {
+    color: #f6d330;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+  }
+
+  .contact__link:hover {
+    color: #fff !important;
+  }
+
+  .contact__descpription {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 23px 0;
+  }
+
+  .contact__thanks {
+    font-size: 14px;
+  }
+
+  .send-form input {
+    margin: 0 0 10px 0;
+  }
+
+  .send-form__btn {
+    padding: 19px 67px;
+    border-radius: 0;
   }
 }
 
 @media screen and (max-width: 359px) {
   .title {
     font-size: 40px;
-  }
-
-  .banner {
-    padding: 150px 0px;
   }
 }
 
