@@ -1,0 +1,132 @@
+.scroll {
+    &__wrapper {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 9999;
+        color: #000;
+    }
+    &__wrapper-item {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 26px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    &__number {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+        margin: 0 5px 0 0;
+    }
+    &__title {
+        font-family: "SofiaPro";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 14px;
+        display: none;
+        margin: 0 5px 0 0 ;
+    }
+    &__line {
+        width: 21px;
+        height: 1px;
+        background-color: #000;
+        transition: all 0.2s;
+    }
+}
+
+.scroll__wrapper-item.activeLine {
+    .scroll__line {
+        width: 60px;
+        transition: all 0.2s;
+    }
+    .scroll__title {
+        display: block;
+    }
+}
+
+.scroll__wrapper.white {
+    .scroll__line {
+        background-color: #fff;
+    }
+    .scroll__line:hover{
+    }
+    .scroll__title,
+    .scroll__number {
+        color: #fff;
+    }
+}
+
+#bannerSection {
+    position: relative;
+    z-index: 5;
+}
+#aboutSection {
+    position: relative;
+    z-index: 4;
+}
+#servicesSection {
+    position: relative;
+    z-index: 1;
+}
+#contactSection {
+    position: relative;
+    z-index: 1;
+}
+#backgroundLines {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    max-width: 1110px;
+    min-height: 500px;
+    color: white;
+    z-index: 2;
+}
+
+.vertical-lines {
+    &__container {
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        border-left: 1px solid rgba(0, 0, 0, 0.06);
+        height: 3500px;
+    }
+}
+
+@include small-desktop {
+    .scroll__wrapper {
+        display: none;
+    }
+}
+
+@include small-desktop-min {
+    .vertical-lines {
+        display: none;
+    }
+}
+
+@include tablet {
+    #bannerSection {
+        position: relative;
+        z-index: 1;
+    }
+    #aboutSection {
+        position: relative;
+        z-index: 1;
+    }
+    .banner {
+        &__title {
+            z-index: 1;
+        }
+    }
+}

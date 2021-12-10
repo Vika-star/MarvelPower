@@ -1,0 +1,144 @@
+@import "./mixins.scss";
+@import "./_fonts.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+/*==========================================*/
+
+$minwidth: 320px;
+$mw: 1110px;
+$md1: $mw + 12;
+$md2: 991.98px;
+$md3: 767.98;
+$md4: 479.98;
+
+/*==========================================*/
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+body {
+    // position: relative;
+
+    color: #000;
+    font-size: 14px;
+    font-family: "SofiaPro";
+}
+body._lock {
+    overflow: hidden;
+    @media (max-width: $md3) {
+    }
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+ul {
+    list-style-type: none;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: $mw;
+    margin: 0 auto;
+    @include small-desktop-min {
+        padding: 0 30px;
+    }
+    @include small-tablet {
+        max-width: none;
+        padding: 0 25px;
+    }
+    @include mobile-s {
+        padding: 0px 15px;
+    }
+}
+
+.text {
+    font-family: "SofiaPro";
+    font-style: normal;
+    font-weight: 300;
+}
+.btn {
+    background: #f9d023;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0;
+    padding: 19px 40px 15px 40px;
+
+    font-family: "SofiaPro";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    color: #000;
+    border: 0px;
+
+    &::after {
+        content: url("../img/icon/btn-icon.svg");
+        margin-left: 5px;
+    }
+}
+.title {
+    font-family: "Alata";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    line-height: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 55px 0;
+    &::after {
+        content: "";
+        width: 100px;
+        height: 6px;
+        background-color: #f6d330;
+        margin-top: 50px;
+    }
+}
+.page {
+    flex: 1 1 auto;
+}
+.background {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 4.66%, #000000 76.78%), url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+@include tablet {
+    .title {
+        font-size: 70px;
+    }
+}
+@include mobile {
+    .title {
+        font-size: 40px;
+        line-height: 50px;
+        &::after {
+            width: 65px;
+            height: 4px;
+        }
+    }
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
+@include mobile-min {
+    .title {
+        font-size: 40px;
+    }
+}
+/*==========================================*/
+@import "_header.scss";
+/*==========================================*/
+@import "_index.scss";
+@import "_additionally.scss";
+/*==========================================*/
